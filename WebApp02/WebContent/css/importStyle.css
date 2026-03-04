@@ -1,0 +1,9 @@
+@charset "UTF-8";
+/* importStyle.css */
+
+p
+{
+	font-size: 4pt;
+	color: purple;
+	font-style: italic;
+}

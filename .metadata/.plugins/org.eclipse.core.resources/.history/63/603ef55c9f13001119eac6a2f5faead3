@@ -1,0 +1,26 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JspTest006.jsp</title>
+</head>
+<body>
+
+<div>
+	<h1>JSP 관찰하기</h1>
+	<hr />
+</div>
+<div>
+	<h2>page 디렉티브 buffer 속성 및 autoFlush 실습</h2>
+	<div>
+	<%
+	for(int i = 1; i <= 1000; i++)
+		{
+	%>1234<%
+		}
+	%>
+	</div>
+</div>
+</body>
+</html>

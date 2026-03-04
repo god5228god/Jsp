@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test030.html</title>
+</head>
+<body>
+	<div>
+		<form>
+			주소검색
+			<input type="text" value="마포구"/>
+			<input type="button" value="검색"/><br><br>
+			<a href="#">04001	서울특별시 마포구 서교동 447-5 (풍성빌딩)</a>
+			<a href="#">03978	서울특별시 마포구 성산동 114-2 (대원빌딩)</a>
+			<a href="#">03973	서울특별시 마포구 성산동 37-9</a>
+			<a href="#">03972	서울특별시 마포구 성산동 49-6 (호상그린빌라)</a>
+			<a href="#">03966	서울특별시 마포구 성산동 59-5 (화이트빌)</a>
+			<a href="#">03949	서울특별시 마포구 중동 386-9</a>
+			<a href="#">03940	서울특별시 마포구 성산동 165-45</a>
+			
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JspTest005.jsp</title>
+<link rel="stylesheet" href="css/main.css" type="text/css"/>
+</head>
+<body>
+	<div>
+		<h1>JSP 관찰하기</h1>
+		<hr />
+	</div>
+	<div>
+		<h2>HttpServlet 관련 실습 및 관찰</h2>
+		<!-- ※ form 태그의 속성  -->
+		<!-- 『action="/WebApp04/login"』 → 데이터를 전송하며 요청하는 페이지 -->
+		<!-- (생략 시 데이터 전송 및 페이지 요청의 대상은 자기 자신) -->
+		<!-- 『method="get"』			  → 데이터 전송 및 페이지 요청 방식 : get 방식 -->
+		<!-- (생략 시 get 방식) -->
+		<form action="/WebApp04/login" method="get">
+			<table>
+				<tr>
+					<th>아이디</th>
+					<td>
+						<!-- ※ name 속성을 식별자로 → userId  -->
+						<input type="text" id="userId" class="txt" style="width: 100px;"
+						name="userId" maxlength="10"/>
+					</td>
+				</tr>
+				<tr>
+					<th>패스워드</th>
+					<td>
+						<input type="password" id="userPwd" class="pwd" style="width: 100px;"
+						name="userPwd"/>
+					</td>
+				</tr>
+				<tr style="height: 50px">
+					<td colspan="2" style="text-align: center;">
+						<input type="submit" value="로그인" class="btn control"  style="width: 100px;"/>
+						<input type="reset" value="다시입력" class="btn control" style="width: 100px;"/>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+function actionShow()
+{
+	alert("확인");
+}
+
+function actionHide()
+{
+	alert("확인");
+	
+}

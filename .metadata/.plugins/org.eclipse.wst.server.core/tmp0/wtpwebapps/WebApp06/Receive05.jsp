@@ -1,0 +1,65 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+<%
+//스크립릿 영역
+
+	// 이전 페이지로(Send05.html)부터 넘어온 데이터 수신
+	//-- name, gender, major, hobby
+	
+	// 한글 깨짐 방지 처리
+	request.setCharacterEncoding("UTF-8");
+
+	String name = request.getParameter("name");			//-- 텍스트 박스 단일값 수신
+	String genderStr = request.getParameter("gender");		//-- 라디오버튼	 단일값 수신
+	String major = request.getParameter("major");			//-- 선택 상자	 단일값 수신
+	//String hobby = request.getParameter("hobby");			
+	String[] hobbies = request.getParameterValues("hobby"); //-- 선택 상자 	 다중 데이터 수신
+	//-- 다중 선택이 가능한 선택 상자일 경우
+	//--	getParameterValues()로 데이터 수신
+	//		→ 배열 반환
+	
+	// name 데이터 처리 → 특이사항 없음
+	// major 데이터 처리 → 특이사항 없음
+	
+	// gender 데이터 처리
+	String gender = "";
+	if(genderStr.equals("M")){
+		gender = "남자";
+	}else if(genderStr.equals("F")){
+		gender = "여자";
+	}else{
+		gender = "확인 불가";
+	}
+
+	// hobby 데이터 처리
+	String hobby = "";
+	if(hobbies != null){
+		for(String item: hobbies)
+			hobby += "[" + item +"]";
+	}
+
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Receive05.jsp</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body>
+<div>
+	<h1>JSP를 이용한 데이터 송수신 실습 04</h1>
+	<p>Send05.jsp ○ → Receive05.jsp ●</p>
+	<hr />
+</div>
+<div>
+	<h2>결과확인</h2>
+	
+	<div>
+		<p>이름: <span><%= name %></span></p>
+		<p>성별: <span><%= genderStr %>(<%= gender %>)</span></p>
+		<p>전공: <span><%= major %></span></p>
+		<p>취미: <span><%= hobby %></span></p>
+	</div>
+</div>
+</body>
+</html>

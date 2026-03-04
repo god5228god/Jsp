@@ -1,0 +1,84 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+<%
+	
+
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SendAndReceive11.jsp</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<style type="text/css">
+
+</style>
+<script type="text/javascript">
+
+
+</script>
+</head>
+<body>
+<div>
+	<h1>JSP를 이용한 데이터 송수신 실습 11</h1>
+	<p>SendAndReceive11.jsp● → SendAndReceive11.jsp●</p>
+	<hr />
+</div>
+
+<!-- 
+	○ 데이터 송수신 실습
+	
+	  - 연도와 월을 입력받아 해당 연월의 달력을 화면에 출력하는 JSP 페이지를 구성한다.
+	  
+	  - 단, submit 버튼 없이 이벤트 처리를 할 수 있도록 한다.
+	  
+	  - 전송한 내용을 수신하여 출력해주는 형태의 페이지로 구성한다.
+	  
+	  - 연도 구성은 현재 연도를 기준으로 이전 10년, 이후 10년으로 구성한다.
+	    (기본적으로 만년 달력을 구성하는데, 현재의 연, 월을 달력 객체를 활용할 수 있도록 한다.)
+
+	  - 월 구성은 1월부터 12월까지로 한다.
+	  
+	  페이지 레이아웃
+	  ---------------------------------------------
+	   2016			 1	
+	  	 :			 :
+	  [2026 ▼] 년 [ 3 ▼] 월
+	  	 :			 :
+	   2036			12
+	  
+	  
+	  ----------------------------
+	  ---- 해당 년 월의 달력 -----
+	  ----------------------------
+	  ----------------------------
+	  
+	  ---------------------------------------------
+	  
+	  - 연도 select나 월 select의 내용이 변화되면
+	    해당 연 월의 달력을 출력하주는 형태의 페이지로 구성한다.
+	    
+	    - 사용자 최초 요청 주소
+	      http://localhost:3306/WebApp06/SendAndReceive11.jsp
+	      
+	   - 물리적 파일 구성
+	     ·SendAndReceive11.jsp
+	
+ -->
+<div>
+	<form method="get">
+		<div class="inputWrap">
+			<select name="yearBox" id="yearBox">
+				<option value="2026">2026</option>
+			</select>년
+			<select name="monthBox" id="monthBox">
+				<option value="3">3</option>
+			</select>월
+		</div>
+	</form>
+</div>
+<div class="calendar">
+	
+</div>
+
+</body>
+</html>

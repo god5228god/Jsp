@@ -1,0 +1,40 @@
+/* ============================
+ 	Test005.java
+ 	- Servlet 실습 및 관찰
+   ============================ */
+
+// 현재
+// Test005 클래스는 일반 자바 클래스
+
+// 이를 서블릿(Servlet)으로 구성하는 방법
+
+// - Servlet 인터페이스 구현 	→ implements Servlet
+// - GenericServlet 클래스 상속 → extends GenericServlet
+// - HttpServlet 클래스 상속 	→ extends HttpServlet
+
+package com.svt;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class Test005 extends HttpServlet
+{
+	
+	@Override
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
+	{
+		super.doGet(request, response);
+	}
+
+	@Override
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
+	{
+		super.doPost(request, response);
+	}
+
+
+}

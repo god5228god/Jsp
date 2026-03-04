@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test009.html</title>
+<script type="text/javascript">
+<!--
+	// 자바 스크립트 코드 작성 → 지원하지 않는 브라우저에서의 처리를 감안한 코드 구성
+	
+	// msg 변수 → 함수 밖에 선언 → 모든 함수에서 접근 가능한 전역 변수
+	var msg = "2026년 2월의 끝자락에서";
+	
+	function buttonOnClick1()
+	{
+		// 테스트
+		//alert("첫 번째 버튼 클릭 확인");
+		
+		alert(msg);
+		
+		// name 변수 → var 키워드 포함 → 함수 내부에 선언 → 지역 변수
+		//var name = "윤주열";
+		
+		// name 변수 → var 키워드 생략 → 함수 내부에 선언 → 상황에 따른 지역/전역 변수로 기능
+		name = "윤주열";
+		
+		document.write("이름: " + name);
+	}
+	
+	function buttonOnClick2()
+	{
+		// 테스트
+		//alert("두 번째 버튼 클릭 확인");
+		
+		alert(msg);
+
+		document.write("이름: " + name);
+	}
+	
+//-->
+</script>
+<!-- 
+<noscript>
+	자바스크립트가 사용되지 못할 경우 표현되는 영역
+</noscript> -->
+
+</head>
+<body>
+
+<input type="button" value="Button1" onclick="buttonOnClick1()"><br><br>
+<input type="button" value="Button2" onclick="buttonOnClick2()"><br><br>
+
+</body>
+</html>

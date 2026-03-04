@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test037.html</title>
+</head>
+<body>
+<div>
+	<h1>자바스크립트 활용</h1>
+	<hr>
+</div>
+<div>
+	<h2>메뉴 보이기/감추기</h2>
+	
+	<div>
+		<form>
+			<input type="button" class="btn"  value="메뉴 보이기"/>
+			<input type="button" class="btn"  value="메뉴 감추기"/>
+			<input type="button" class="btn"  value="메뉴 보이기/감추기"/>
+		
+		</form>
+	</div>
+</div>
+</body>
+</html>

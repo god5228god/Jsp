@@ -1,0 +1,41 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+<%
+
+	String danStr = request.getParameter("dan");
+	
+	String result = "";
+	try
+	{
+		int dan = Integer.parseInt(danStr);
+		
+		for(int i = 1; i<=9; i++)
+		{
+			result += String.format("%d * %d = %d<br>", dan, i, (dan*i));
+		}
+		
+	}
+	catch(Exception e)
+	{
+		System.out.println(e.toString());
+	}
+	
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Receive09.jsp</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body>
+<div>
+	<h1>JSP를 이용한 데이터 송수신 실습 09</h1>
+	<p>Send09.jsp○ → Receive09.jsp●</p>
+	<hr />
+</div>
+<div>
+	<h2>결과 확인</h2>
+	<%= result %>
+</div>
+</body>
+</html>

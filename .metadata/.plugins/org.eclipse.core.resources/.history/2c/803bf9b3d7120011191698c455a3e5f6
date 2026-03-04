@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test041.html</title>
+<link rel="stylesheet" href="css/main.css" type="text/css" />
+<script type="text/javascript">
+	
+	// 자바스크립트 배열 객체 구성
+	let boardArray = new Array();
+	
+	// 사용자 정의 객체 구성(생성자 함수 정의)
+	function Board(uName, uContent)
+	{
+		this.userName = uName;
+		this.userContent = uContent;
+		this.writeDay = new Date;
+		
+	}
+	
+	// CHECK!
+	// 프로토타입(prototype) 구성을 통해
+	// 사용자 정의 객체의 함수(기능, 동작, 행위) 정의
+	//Board.prototype.userLocalString = 기능;
+	Board.prototype.userLocalString = function()
+	{
+		return this.writeDay.getFullYear()+"-"
+				+(this.writeDay.getMonth()+1) + "-" 
+				+ this.writeDay.getDate() + " "
+				+ this.writeDay.getHours()+":"
+				+ this.writeDay.getMinutes()+":"
+				+ this.writeDay.getSeconds();
+						
+				// getHours() 	: 시
+				// getMinutes() : 분
+				// getSeconds() : 초
+	};
+	
+	// 글쓰기 버튼이 클릭되었을 때 호출되어 기능하는 함수
+	function protoTest()
+	{
+		let uName = document.getElementById("uName").value;
+		let uContent = document.getElementById("uContent").value;
+		
+		// boardArray 배열의 길이 확인
+		let len = boardArray.length;
+		
+		// 확인
+		//alert(len);
+		//-- 최초 페이지 구성 과정에서 테스트 시 배열길이는 0
+		
+		//new Board(uName, uContent);
+		
+		boardArray[len] = new Board(uName, uContent);
+		// boardArray[0] = new Board(uName, uContent);
+		
+		// 확인
+		//alert(len);
+		//-- 작성이 이루어질 때 마다 + 1 
+		
+		let tableNode = document.getElementById("bbsTable");
+		
+		let trNode = document.createElement("tr");
+		trNode.appendChild(createTdNode(len+1));
+		trNode.appendChild(createTdNode(uName));
+		trNode.appendChild(createTdNode(uContent));
+		trNode.appendChild(createTdNode((boardArray[len].userLocalString()));
+		tableNode.appendChild(trNode);
+		
+		
+		
+		
+	}
+	
+	function createTdNode(val)
+	{
+		let textNode = document.createTextNode(val);
+		let tdNode = document.createElement("td");
+		return tdNode.appendChild(textNode);
+	}
+</script>
+</head>
+<body>
+<div>
+	<h1>자바스크립트 활용</h1>
+	<hr>
+</div>
+<div>
+	<p>사용자 정의 객체 및 프로토타입 활용</p>
+	<div>
+		<form>
+			<!-- 입력 폼을 구성하는 레이아웃 테이블 → 틈날때마다  div로 구성해 볼 것 -->
+			<table class="table">
+				<tr>
+					<th>작성자</th>
+					<td>
+						<input type="text" id="uName" class="txt" style="width: 150px;" />
+					</td>
+				</tr>
+				<tr>
+					<th>내용</th>
+					<td>
+						<input type="text" id="uContent" class="txt" style="width: 600px;" />
+					</td>
+				</tr>		
+			</table>
+			<br><br>
+			<input type="button" class="btn control" value="글쓰기" style="width: 680px; height: 40px; font-size: 18pt;" onclick=" protoTest()" />
+			<br><br>
+			
+			<!-- 리스트 형식으로 내용을 볼 수 잇도록 구성하는 레이아웃 테이블 -->
+			<table class="table" border="1" id="bbsTable">
+				<tr>
+					<th style="width: 5%;">번호</th>
+					<th style="width: 15%;">작성자</th>
+					<th style="width: 60%;">내용</th>
+					<th style="width: 20%;">작성일</th>
+				</tr>
+				<!-- <tr>
+					<td>1</td>
+					<td>강명철</td>
+					<td>어쩌고 저쩌고</td>
+					<td>2026-02-26</td>
+				</tr> -->
+			</table>
+		</form>
+	</div>
+</div>
+</body>
+</html>

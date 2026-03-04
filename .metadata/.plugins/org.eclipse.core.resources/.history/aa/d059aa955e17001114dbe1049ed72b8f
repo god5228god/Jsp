@@ -1,0 +1,34 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SendAndReceive10.jsp</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body>
+<div>
+	<h1>JSP를 이용한 데이터 송수신 실습 10</h1>
+	<p>SendAndReceive10.jsp● → SendAndReceive10.jsp●</p>
+	<hr />
+</div>
+<div>
+	<!-- <form action="Test.jsp" method="post">
+		입력 <input type="text" id="userInput" name="userInput" class="txt"/>
+		<br><br>
+		
+		<button type="submit" class="btn control">테스트</button>
+		<button type="reset" class="btn control">취소</button>
+		
+	</form> -->
+	<form action="" method="post">
+		입력 <input type="text" id="userInput" name="userInput" class="txt"/>
+		<br><br>
+		
+		<button type="submit" class="btn control">테스트</button>
+		<button type="reset" class="btn control">취소</button>
+		
+	</form>
+</div>
+</body>
+</html>

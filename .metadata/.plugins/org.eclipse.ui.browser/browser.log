@@ -1,0 +1,36 @@
+
+2월 25, 2026 08:42:28.87 NEW SESSION
+2월 25, 2026 08:42:28.87 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 25, 2026 08:42:31.68 [11540:24760:0225/084231.687:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+2월 25, 2026 08:43:01.29 [11540:24760:0225/084301.293:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+2월 25, 2026 08:43:53.70 [11540:24760:0225/084353.702:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+2월 25, 2026 08:45:18.06 [11540:24760:0225/084518.062:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+2월 25, 2026 08:49:07.76 [11540:24760:0225/084907.762:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+2월 25, 2026 08:55:42.06 [11540:24760:0225/085542.061:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+2월 25, 2026 12:52:47.49 [11540:18068:0225/125247.496:ERROR:components\device_event_log\device_event_log_impl.cc:202] [12:52:47.496] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+2월 25, 2026 13:32:07.39 [11540:18068:0225/133207.390:ERROR:components\device_event_log\device_event_log_impl.cc:202] [13:32:07.391] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+2월 25, 2026 13:32:33.01 [11540:18068:0225/133233.011:ERROR:components\device_event_log\device_event_log_impl.cc:202] [13:32:33.011] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+2월 25, 2026 13:33:31.03 [11540:24760:0225/133331.034:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:434] Failed to connect to MCS endpoint with error -118
+2월 25, 2026 13:33:52.07 [11540:24760:0225/133352.072:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:434] Failed to connect to MCS endpoint with error -118
+2월 25, 2026 13:54:41.58 [11540:18068:0225/135441.584:ERROR:chrome\browser\ui\views\user_education\impl\browser_user_education_interface_impl.cc:154] Attempting to show IPH IPH_LiveCaption before browser initialization complete; IPH will not be shown.
+2월 25, 2026 14:13:11.71 [11540:18068:0225/141311.714:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.414 s for first_image_paint 0.398 s
+2월 25, 2026 14:13:11.75 [11540:18068:0225/141311.758:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.414 s for first_image_paint 0.398 s
+2월 25, 2026 14:13:11.88 [11540:18068:0225/141311.887:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.414 s for first_image_paint 0.398 s
+2월 25, 2026 14:13:12.02 [11540:18068:0225/141312.025:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.414 s for first_image_paint 0.398 s
+2월 25, 2026 14:13:12.17 [11540:18068:0225/141312.175:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.414 s for first_image_paint 0.398 s
+2월 25, 2026 14:13:12.28 [11540:18068:0225/141312.279:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.414 s for first_image_paint 0.398 s
+2월 25, 2026 14:13:12.40 [11540:18068:0225/141312.404:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.414 s for first_image_paint 0.398 s
+2월 25, 2026 14:13:12.51 [11540:18068:0225/141312.518:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.414 s for first_image_paint 0.398 s
+2월 25, 2026 14:13:13.00 [11540:18068:0225/141313.000:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.414 s for first_image_paint 0.398 s
+2월 25, 2026 14:13:16.03 [11540:18068:0225/141316.031:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.414 s for first_image_paint 0.398 s
+2월 25, 2026 14:13:16.51 [11540:18068:0225/141316.516:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.414 s for first_image_paint 0.398 s
+2월 25, 2026 14:13:16.69 [11540:18068:0225/141316.693:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.414 s for first_image_paint 0.398 s
+2월 25, 2026 15:20:17.43 [11540:18068:0225/152017.436:ERROR:chrome\browser\ui\views\user_education\impl\browser_user_education_interface_impl.cc:154] Attempting to show IPH IPH_ExtensionsZeroStatePromo before browser initialization complete; IPH will not be shown.
+2월 25, 2026 15:20:17.80 [11540:24760:0225/152017.805:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+2월 25, 2026 15:20:46.94 [11540:24760:0225/152046.946:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+2월 25, 2026 15:21:28.97 [11540:24760:0225/152128.977:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+2월 25, 2026 15:22:54.86 [11540:24760:0225/152254.867:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+2월 25, 2026 15:26:27.72 [11540:24760:0225/152627.720:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+2월 25, 2026 15:32:04.87 [11540:24760:0225/153204.870:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+2월 25, 2026 15:47:37.93 [11540:18068:0225/154737.934:ERROR:mojo\public\cpp\bindings\lib\interface_endpoint_client.cc:748] Message 5 rejected by interface blink.mojom.WidgetHost
+2월 25, 2026 15:50:57.77 [11540:24760:0225/155057.773:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:483] ConnectionHandler failed with net error: -2

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test037.html</title>
+</head>
+<body>
+<div>
+	<h1>자바스크립트 활용</h1>
+	<hr>
+</div>
+<div>
+	<h2>메뉴 보이기/감추기</h2>
+	
+	<div>
+		<form>
+			<input type="button" class="btn"  value="메뉴 보이기"/>
+			<input type="button" class="btn"  value="메뉴 감추기"/>
+			<input type="button" class="btn"  value="메뉴 보이기/감추기"/>
+		
+		</form>
+	</div>
+	<br><br>
+	<div id="menuTable">
+		<table>
+			<tr>
+				<td>JAVA 기초</td>
+			</tr>
+			<tr>
+				<td>Oracle 중급</td>
+			</tr>
+			<tr>
+				<td>JSP 고급</td>
+			</tr>
+			<tr>
+				<td>Servlet 활용</td>
+			</tr>
+		</table>	
+	</div>
+</div>
+</body>
+</html>

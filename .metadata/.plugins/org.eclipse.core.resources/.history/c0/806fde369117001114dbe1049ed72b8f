@@ -1,0 +1,63 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+<%
+
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SendAndReceive12.jsp</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<style type="text/css">
+form{height: 50px; background-color: red; width: 200px;}
+form>*{float: left; line-height: 50px;}
+</style>
+<script type="text/javascript">
+
+</script>
+</head>
+<body>
+<div>
+	<h1>JSP를 이용한 데이터 송수신 실습 12</h1>
+	<p>SendAndReceive12.jsp● → SendAndReceive12.jsp●</p>
+	<hr />
+</div>
+<!-- 
+	○ 데이터 송수신 실습
+	
+		- 사용자가 선택한 연도와 월에 대해 달력을 구성하는 JSP 페이지를 구성한다.
+		- 단, submit 버튼 없이 이벤트 처리를 할 수 있도록 하낟.
+		- 전송한 내용을 자신 페이지로 수신하여 출력해주는 형태의 단독 페이지로 구성한다.
+		
+		페이지 레이아웃
+		-------------------------------------------------------
+		
+		       ◀ 2026년 3월 ▶
+		  ----------------------------
+		  ---- 해당 년 월의 달력 -----
+		  ----------------------------
+		  ----------------------------
+		-------------------------------------------------------
+		
+		- ◀▶ 클릭 시 해당 년 월의 달력을 출력해주는 형태의 페이지로 구성한다.
+		- 사용자 최초 요청 주소
+	      http://localhost:3306/WebApp06/SendAndReceive12.jsp
+	      
+	   - 물리적 파일 구성
+	     ·SendAndReceive12.jsp
+	
+ -->
+<div>
+	<form method="post">
+		<button class="prev">◀</button>
+		<p>2026년</p>
+		<p>3월</p>
+		<button class="next">▶</button>
+	</form>
+</div>
+<br><br>
+<div>
+달력 그리기
+</div>
+</body>
+</html>

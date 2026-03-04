@@ -1,0 +1,19 @@
+let menu = document.getElementById("menuTable");
+let menuStatus = menu.getAttribute("display");
+
+function actionShow()
+{
+	if(menuStatus = "none"){		
+		menu.style.display = "block";
+	}
+}
+
+function actionHide()
+{
+	
+	if(menueStatus = "block"){		
+		menu.style.display ="none";
+	}
+	
+	
+}

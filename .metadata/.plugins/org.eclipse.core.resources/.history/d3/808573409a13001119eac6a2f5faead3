@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test005.java</title>
+</head>
+<body>
+<div>
+	<h1>서블릿 관련 실습 및 관찰</h1>
+	<hr />
+</div>
+div>h2{HttpServlet 클래스를 이용한 서블릿 실습}+p{결과 확인	}
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test007.html</title>
+<style type="text/css">
+	/* h2{color: darkblue;} */
+	input[type="button"]{cursor:pointer; font-size: 20pt; font-weight: bold;}
+	input[type="button"]:hover{color: white; font-weight: bold; font-size: 20pt;}
+	input[type="button"]:active{color: red; font-weight: bold; font-size: 20pt;}
+	
+	input:enabled{background-color:  yellow;}
+	/* → input 태그가 사용가능한 상태일 때 적용 */
+	
+	input:disabled{background-color: gray;}
+	/* → input 태그가 사용 불가능한 상태일 때 적용 */
+	
+	input:focus{background-color:  orange;}
+	/* → input 태그에 포커스 될 때 적용 */
+	
+	ul{overflow: hidden;}
+	li{list-style: none; float: left; padding: 15px; border: 2px solid #333;}
+	li:first-child{border-radius: 10px 0 0 10px;}
+	li:last-child{border-radius: 0 10px 10px 0;}
+	
+	li:nth-child(2n){background-color: red;}
+	li:nth-child(2n+1){background-color: yellow;}
+</style>
+</head>
+<body>
+<div>
+	<h1>동적 선택자</h1>
+	<p>(가상, 반응, 상태, 구조 ..)</p>
+	<hr>
+</div>
+
+<div>
+	<ul>
+		<li> 첫 번째</li>
+		<li> 두 번째</li>
+		<li> 세 번째</li>
+		<li> 네 번째</li>
+		<li> 다섯 번째</li>
+		<li> 여섯 번째</li>
+		<li> 일곱 번째</li>
+	</ul>
+</div>
+
+
+<div>
+	<h2>사용 가능</h2>
+	<input>
+	
+	<h2>사용 불가능</h2>
+	<input disabled="disabled">
+</div>
+<br><br>
+
+
+
+<div>
+	<input type="button" value="선택자 확인">
+</div>
+
+
+
+</body>
+</html>

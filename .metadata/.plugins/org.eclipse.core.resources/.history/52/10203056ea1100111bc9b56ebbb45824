@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test026.html</title>
+<style type="text/css">
+form{position: relative; width: 600px; height: 600px; 
+	background-color: #ebf2ff; padding: 20px 10px; box-sizing: border-box;}
+.btn{margin: 20px 0;width: 100px; height: 40px; 
+	font-size: 18px; border: none;  background-color: #F20C90; 
+		color: #fff; font-weight: bold; position: absolute; bottom: -10px; left: 250px;}
+.btn:hover{background-color: #fff; color: #07219B; border: 3px solid #07219B;}
+h2{font-size: 30px; font-weight: bold; color: #f20c90; width: 600px; text-align: center;}
+p{font-size: 25px; font-weight: bold; width: 600px; text-align: center; margin: 0; margin-bottom: 15px; color: #07219B;}
+.checkWrap{width: 200px; height: 350px;  margin: 0 auto; position: relative;}
+.checkWrap>*{margin-bottom: 10px;}
+
+input[type="checkbox"] {
+    appearance: none; /* 기본 모양 삭제 */
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+  	position: relative; top: 12px;
+  	background-color: #fff;
+}
+
+input[type="radio"] {
+    appearance: none; /* 기본 모양 삭제 */
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+  	position: relative; top: 2px;
+  	background-color: #fff;
+}
+
+
+input[type="checkbox"]:checked, input[type="radio"]:checked {
+    color: #f20c90;
+    background-color: #F20C90;
+    border: 2px double #ccc;
+}
+input[type="checkbox"]:checked + label{color: #f20c90; font-weight: bold;}
+input[type="radio"]:checked + label{color: #f20c90; font-weight: bold;}
+}
+
+</style>
+<script type="text/javascript">
+/* 	let radioObj = document.getElementsByName("size");
+	let checkObj = document.getElementsByName("checkGroup");
+	 
+	function actionChoice(obj){
+		
+		let msg = "선택한 항목이 존재하지 않습니다.";
+		let cnt = "";
+		for(let i = 0 ; i<radioObj.length; i++){
+			if(radioObj[i].checked){
+				cnt = parseInt(radioObj[i].value);
+				break;
+			}
+		}
+		
+
+		
+		let checkCnt = 0;
+		
+		for(let i = 0; i < checkObj.length; i++){
+			if(checkObj[i].checked){
+				checkCnt++;
+			}
+		}
+
+		if(checkCnt>cnt){
+			setTimeout(() => {
+				alert("선택한 갯수가 초과되었습니다.");
+				obj.checked = false;
+				
+			}, 10);
+		}
+	} */
+	
+	// 모범 답안
+	// 선택할 수 있는 아이스크림의 갯수
+	let cnt = 0;
+	// 사용자가 선택한 아이스크림의 갯수
+	let userCnt = 0;
+	
+	// 라디오 버튼 클릭 시 호출되는 함수
+	function countSet(val){
+		// alert(val+"확인");
+		
+		cnt = parseInt(val);
+		
+		alert("선택할 수 있는 아이스크림의 갯수는 '"+cnt+"' 개 입니다.");
+		//return cnt;
+	}
+	
+	// 체크박스 클릭 시 호출되는 함수
+	function actionChoice(obj){
+		// 확인
+		// alert("함수 호출 확인");
+		//alert("체크되어 있는지 확인");
+		// alert(obj);
+		//--==>> [object HTMLInputElement]
+		//alert(obj.checked);
+		//--==>> true/false
+		//-- 체크 설정되며 클릭된 상황 → true 	┐
+		//-- 체크 해제되며 클릭된 상황 → false ┘판단 가능
+		
+		
+		if(obj.checked){		//-- 체크 설정 시
+			if(userCnt >= cnt){
+				alert("선택할 수 있는 갯수를 초과하였습니다.");
+				
+				// check 
+				obj.checked = false;
+				return;
+			}
+			//사용자가 선택한 아이스크림의 갯수 증가
+			userCnt++;
+		}else{					//-- 체크 해제 시
+			//사용자가 선택한 아이스크림의 갯수 감소
+			userCnt--;
+		}
+		
+		// 확인
+		//alert("선택 갯수: " + userCnt);
+		alert("선택 가능: "+cnt+" / 선택 갯수: "+userCnt);
+		
+		
+	}
+	
+</script>
+</head>
+<body>
+<div>
+	<h1>자바스크립트 활용</h1>
+	<hr />
+</div>
+
+<div>
+	<h2>아이스크림 주문</h2>
+	<form>
+		<p>사이즈 선택</p>
+		<input type="radio" name="size" id="a1" value="1" checked="checked" onclick="countSet('1')" />
+		<label for="a1">싱글(1)</label>
+		<input type="radio" name="size" id="b1" value="2" onclick="countSet('2')"/>
+		<label for="b1">더블(2)</label>
+		<input type="radio" name="size" id="c1" value="3" onclick="countSet('3')"/>
+		<label for="c1">파인트(3)</label>
+		<input type="radio" name="size" id="d1" value="4" onclick="countSet('4')"/>
+		<label for="d1">쿼터(4)</label>
+		<input type="radio" name="size" id="e1" value="5" onclick="countSet('5')"/>
+		<label for="e1">패밀리(5)</label>
+		<input type="radio" name="size" id="f1" value="6" onclick="countSet('6')"/>
+		<label for="f1">하프갤런(6)</label>
+		<br><br>
+		
+		<p>종류 선택</p>
+		<div class="checkWrap">
+			<input type="checkbox" name="checkGroup" id="a2" value="민트" onclick="actionChoice(this)" />
+		 	<label for="a2">민트초코</label><br>
+		 	<input type="checkbox" name="checkGroup" id="b2" value="엄마" onclick="actionChoice(this)"/>
+		 	<label for="b2">엄마는외계인</label><br>
+		 	<input type="checkbox" name="checkGroup" id="c2" value="체리" onclick="actionChoice(this)"/>
+		 	<label for="c2">체리쥬빌레</label><br>
+		 	<input type="checkbox" name="checkGroup" id="d2" value="봉봉" onclick="actionChoice(this)"/>
+		 	<label for="d2">아몬드봉봉</label><br>
+		 	<input type="checkbox" name="checkGroup" id="e2" value="사랑" onclick="actionChoice(this)"/>
+		 	<label for="e2">사랑에빠진딸기</label><br>
+		 	<input type="checkbox" name="checkGroup" id="f2" value="바람" onclick="actionChoice(this)"/>
+		 	<label for="f2">바람과함께사라지다</label><br>
+		 	<input type="checkbox" name="checkGroup" id="g2" value="레인" onclick="actionChoice(this)"/>
+		 	<label for="g2">레인보우샤베트</label><br>
+		 	<input type="checkbox" name="checkGroup" id="h2" value="요거" onclick="actionChoice(this)"/>
+		 	<label for="h2">31요거트</label><br>
+		 	<input type="checkbox" name="checkGroup" id="i2" value="슈팅" onclick="actionChoice(this)"/>
+		 	<label for="i2">슈팅스타</label><br>
+		 	<input type="checkbox" name="checkGroup" id="j2" value="베리" onclick="actionChoice(this)"/>
+		 	<label for="j2">베리베리스트로베리</label><br>
+		 	<input type="checkbox" name="checkGroup" id="k2" value="애플" onclick="actionChoice(this)"/>
+		 	<label for="k2">애플민트</label><br>
+		</div>
+		
+		<button type="button" class="btn" >선택 완료</button>
+	</form>
+</div>
+</body>
+</html>

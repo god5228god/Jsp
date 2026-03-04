@@ -1,0 +1,36 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JspTest005.jsp</title>
+<link rel="stylesheet" href="css/main.css" type="text/css"/>
+</head>
+<body>
+	<div>
+		<h1>JSP 관찰하기</h1>
+		<hr />
+	</div>
+	<div>
+		<h2>HttpServlet 관련 실습 및 관찰</h2>
+		<form action="">
+			<table>
+				<tr>
+					<th>아이디</th>
+					<td><input type="text" id="userId" class="txt" style="width: 100px;"/></td>
+				</tr>
+				<tr>
+					<th>패스워드</th>
+					<td><input type="password" id="userPwd" class="pwd" style="width: 100px;"/></td>
+				</tr>
+				<tr style="height: 50px">
+					<td colspan="2" style="text-align: center;">
+						<input type="submit" value="로그인" class="btn control"  style="width: 100px;"/>
+						<input type="reset" value="다시입력" class="btn control" style="width: 100px;"/>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

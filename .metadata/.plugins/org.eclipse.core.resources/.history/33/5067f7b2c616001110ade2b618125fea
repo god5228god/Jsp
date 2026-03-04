@@ -1,0 +1,31 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+<%
+
+	request.setCharacterEncoding("UTF-8");
+
+	String id = request.getParameter("userId");
+	String pw = request.getParameter("userPw");
+	String name = request.getParameter("userName");
+	String tel = request.getParameter("userTel");
+	
+	// 형식 확인
+	
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Receive07.jsp</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<style type="text/css">
+
+</style>
+</head>
+<body>
+<div>
+	<h1>JSP를 이용한 데이터 송수신 실습 08</h1>
+	<p>Send08.jsp○ → Receive08.jsp●</p>
+	<hr />
+</div>
+</body>
+</html>

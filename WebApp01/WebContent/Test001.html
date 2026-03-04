@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test001.html</title>
+</head>
+<body>
+ 
+<!--  블럭 잡고 ctrl+shift+/ 는 주석처리 
+ 블럭 잡고 ctrl+shift+\ 는 주석해재  -->
+<!-- 주석문 처리>
+ -->
+<!-- 
+홍길동
+다시 또 확인
+-->
+<!-- 문단구성
+ 
+ -->
+<p>항상 그래왔던 것 처럼</p>
+<!--  개행 실습-->
+우리는 익숙해지기 위한 길목에서<BR><br/><Br /><!-- <br/>도 같은 역할을 한다  -->
+첫 번째 모퉁이를 돌기 위해 노력하고 있다.
+후회 없도록 열심히 하자.<br><br><br>
+
+<br>
+영역 구성
+<div>
+ 	첫 번째 div 영역<br>
+ 	<h1> h1~h6 는 제목을 표현할 때 사용한다.</h1>
+ 	<h2> 숫자가 커질수록 더 작은 개념의 제목을 표현하기 위해 사용한다.</h2>
+ 	<h3> 더 작은 제목이라 함은 시각적으로 보여지는 크기도 포함하고 있지만</h3>
+ 	<h4>실무적으로 웹 표준을 근거로 사용할 때는 의미를 담아 사용해야 한다.</h4>
+ 	<h5>여섯 단계로 나뉘며</h5>
+ 	<h6>그 이외의 단계는 존재하지 않지만</h6>
+ 	<h7> 쓴다고 페이지 에러 발생하거나 하지는 않는다.</h7>
+</div>
+
+<div>
+ 	두 번째 div 영역<br>
+ 	br 태그(앨리먼트)는 단독 태그이며 개행을 할 때 사용한다.
+ 	<p> p태그(앨리먼트)는 문단을 지정하고자 할 때 사용한다.
+ 	문장을 여러개 감싸서 단락을 표현할때 주로 사용하게 된다.</p>
+
+ 	
+</div>
+
+
+	<!-- 공백 발생~!!!!  -->
+
+
+
+<div>
+ 	세 번째 div 영역<br>
+ 	<p>span 테그(앨리먼트)는 
+ 	문장의 일부 단어나 일부 문장을 특별한 형태로 처리할 대 주로 사용한다.<br>
+ 	일반적으로 <span style="font-size:20pt; font-weight: bold; color:red;">CSS</span> 와 같이 표현된다.</p>
+ 	
+</div>
+
+<p>As Korean snowboarders rack up medals at the Milan-Cortina Winter Olympics, attention has turned to a Buddhist monk who has supported winter sports athletes for more than two decades.
+
+Ven. Hosan, head monk of Bongseonsa Temple, said, “Our athletes have</p> <p> worked so hard,” in an interview with Yonhap News Agency on Thursday.
+
+At this year’s Games, several medalists are part of the so-called “Dharma Kids.”</p>
+
+<p>They include Kim Sang-gyeom, who won Korea’s first medal of the Games and the country’s 400th Olympic medal overall in the snowboard parallel giant slalom; Yoo Seung-eun,
+ who claimed Korea’s first-ever Olympic medal in women’s skiing or snowboarding in the big air event; and Choi Gaon, who secured Korea’s first Olympic gold medal in skiing in the halfpipe.
+
+Many of them either competed in the Dharma Snowboard Competition or received sponsorship from the Buddhist community since 2004. Hosan has led the competition from the beginning.</p>
+
+<!-- 수평선 -->
+<hr>
+<hr/>
+<br><br/>
+<!-- 특수문자 표기 -->
+     공백확인	   글자확인<br>
+<!--  &nbsp;  -->
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 공백확인  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 글자확인<br>
+
+<!-- 잘못된 예  -->
+데이터1 < 데이터2
+<!-- 데이터1 < 데이터2  --> <br>
+<!-- 잘못된 예  -->
+데이터1<데이터2> <br>
+
+&lt;<br> <!-- 부등호 <  -->
+&gt;<br> <!-- 부등호 >  -->
+데이터1 &lt; 데이터2 <br>
+
+<!-- 잘못된 예  -->
+&<br>
+<!-- & -->
+&amp;
+
+<!-- 
+※ HTML(HYPERText MarkUp Language)에서 가장 중요한 글자는
+하이퍼텍스트를 의미하는 『H』이다
+하이퍼텍스트는 사용자 선택에 따라
+관련한 특정 정보로 이동할 수 있도록 조직된 문서를 의미한다.
+
+HTML 페이지가 조직화된 문서 형태가 될 수 있는 이유는
+『a』 태그 덕분이다
+다른 웹 페이지나 웹 페이지 내부의 특정 위치로 이동할 때 사용한다.
+
+페이지 내부에서 특정 위치로 이동할 때는
+『id』속성을 추가로 활용한다.
+
+-->
+<div>
+	<a href="http://naver.com">네이버</a><br>
+	<a href="http://google.com">구글</a><br>
+	<a href="http://daum.net">다음</a><br>
+	<a href = "#red">red로 이동</a><br>
+	<a href = "#green">green로 이동</a><br>
+	<a href = "#blue">blue로 이동</a><br>
+	<a href = "#">빈 링크</a>
+</div>
+<br><br/>
+
+<h1 id="red">red</h1> 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<h1 id="green">green</h1> 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<h1 id="blue">blue</h1> 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!--
+ 	b 	  글자 진하게			→ 강조
+ 	i 	  글자 기울어지게		→ 인용
+ 	small 글자 작게 표현		→ 추가			※ big 없음~!!!
+ 	sub   글자 아래 첨자		→ 참조(동의어) 
+ 	sup   글자 위 첨자			→ 참조(동의어)
+ 	ins   글자 밑줄				→ 강조
+ 	del   글자 취소선			→ 취소(흔적 유지)
+  -->
+  
+ <div>
+ 		나 <b>보기가</b> 역겨워 가실 때에는<br>
+ 		나 <i>보기가</i> 역겨워 가실 때에는<br>
+ 	 	나 <small>보기가</small> 역겨워 가실 때에는<br>
+ 	 	나 <sub>보기가</sub> 역겨워 가실 때에는<br>
+ 	 	나 <sup>보기가</sup> 역겨워 가실 때에는<br>
+ 	 	나 <ins>보기가</ins> 역겨워 가실 때에는<br>
+ 	 	나 <del>보기가</del> 역겨워 가실 때에는<br>
+ </div>
+
+<br><br/><br><br/><br><br/><br><br/><br><br/><br><br/><br><br/><br><br/><br><br/><br><br/>
+<br><br/><br><br/><br><br/><br><br/><br><br/><br><br/><br><br/><br><br/><br><br/><br><br/><br><br/>
+<br><br/><br><br/><br><br/><br><br/><br><br/><br><br/><br><br/><br><br/><br><br/><br><br/><br><br/>
+
+</body>
+</html>

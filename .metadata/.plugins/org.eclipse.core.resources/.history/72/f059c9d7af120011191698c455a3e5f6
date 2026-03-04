@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test036.html</title>
+<script type="text/javascript">
+
+	function actionClock(){
+		
+		let clock = document.getElementById("clock");
+		
+		// ※ 정해진 시간 간격을 두고 동작
+		//	→ 『setInterval(동작, 밀리초)』
+		setInterval(function(){
+			let now = new Date();
+		},1000);
+		
+		
+	}
+</script>
+</head>
+<body>
+<div>
+	<h1>자바스크립트 활용</h1>
+	<hr>
+</div>
+<div>
+	<h2>setInterval()</h2>
+	<br><br>
+	
+	<input type="button" value="결과 확인" class="btn" onclick="actionClock()"/>
+	<br><br>
+	
+	<h1 id="clock"></h1>
+</div>
+</body>
+</html>

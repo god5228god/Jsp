@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test005.html</title>
+<script type="text/javascript">
+	/* 
+	//num1 = 10;					//-- 변수 선언 및 초기화
+									//	 (변수 선언 과정이 특별히 존재하지 않음)
+							
+	var num1 = 10;					//-- 변수 선언 및 초기화
+									//	 (var 키워드 활용)
+							
+	//document.write("num1 = ");	//-- 단지 "num1 = "이라는 문자열을 출력해라
+	document.write('num1 = ');		//-- 단지 'num1 = '이라는 문자열을 출력해라
+							
+	//document.write("num1"); 		//-- 단지 "num1"이라는 문자열을 출력해라
+	document.write(num1);			//-- write() 함수에 num1이라는 변수의 이름을 넘기는 상황
+									//	 → num1 변수에 담겨있는 값 출력
+	 */
+	 
+	 num1 = 10;						//-- 변수 num1에 10 대입
+	document.write("num1 = ");		//-- 문자열 출력
+	document.write(num1);			//-- 변수(에 담겨있는) 값 출력
+	
+	num1 = 100;							//-- 변수 num1에 100 대입
+	//document.write("\n"+"num1 = ");		//-- 문자열 출력 → check! → \n 개행 안됨
+	document.write("<br>"+"num1 = ");	//-- 문자열 출력 → check! → <br> 개행
+	document.write(num1); 				//-- 변수(에 담겨있는) 값 출력
+	
+	num1 = "2026년 2월의 끝자락에서";	//-- 변수 num1에 문자열 대입 → check!
+										// 	 → 에러 발생하지 않음
+	document.write("<br>" + "num1 = "); //--==>> 동적 데이터 타입
+	document.write(num1);
+	
+	num2 = 200;							//-- 변수 num2에 200 대입
+	
+	num1 = num2;						//-- 변수 num1(문자열)에 num2(정수) 대입
+	
+	document.write("<br>num1 = ");
+	document.write(num1);
+	
+	document.write("<br><br><br><br>");
+	
+	num1 = 10;
+	
+	var num2;
+	num2 = 20;
+	
+	var num3 = 30;
+	
+	document.write("num1 = " + num1);
+	document.write("<br> num2 = " + num2);
+	document.write("<br> num3 = " + num3);
+	
+	
+	
+	
+	
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

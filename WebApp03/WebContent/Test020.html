@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test020.html</title>
+<style type="text/css">
+.btn{width: 350px; height: 35px; margin: 15px 0; border:none; background-color:#5eb1e0; color: #fff; box-shadow: 2px 2px 2px #ccc;}
+input[type="text"]{margin-left: 20px;}
+label{display:inline-block; width: 60px;}
+table{border-collapse: collapse; border: 2px solid #333;}
+td{padding: 0 5px; box-sizing: border-box;}
+</style>
+<script type="text/javascript">
+
+function addMember(){
+	// 확인
+	//alert("함수 호출 확인");
+	
+	let name = document.getElementById("txtName").value;	// "둘리"
+	let tel = document.getElementById("txtTel").value;		// "010-5555-5555"
+	let addr = document.getElementById("txtAddr").value;	// "서울 마포구"
+	
+	// 확인
+	//alert(name+"/"+tel+"/"+addr);
+	
+	// CHECK!
+	// table 엘리먼트 접근
+	let tableNode = document.getElementById("memberTbl");
+	//alert(tableNode);
+	//--==>> [object HTMLTableElement]
+	
+	// tbody 엘리먼트 접근 → 사용하지 않는 경우 생략
+	// ※ 주의. 브라우저에 따라 다른 결과
+	
+/* 	let tbodyNode;
+	
+	if(tableNode.childNodes[0].nodeType==1){
+		tbodyNode = tableNode.childNodes[0];	// IE 구버전
+	}else{
+		tbodyNode = tableNode.childNodes[1];	// Chrome. FF,...
+	}
+	
+	// 확인
+	alert(tableNode.childNodes[0].nodeType);
+	//--==>> 3
+	 */
+	 
+	 // tr노드 생성
+	 let trNode = document.createElement("tr");		//<tr></tr>
+	 
+/* 	 let tdNode1 = document.createElement("td");	//<td></td>
+	 let nameNode = document.createTextNode(name);	// <td> 노드에 추가할 "둘리" 텍스트노드 생성
+	 
+	 let tdNode2 = document.createElement("td");	//<td></td>
+	 let telNode = document.createTextNode(tel);	// <td> 노드에 추가할 "010-5555-5555" 텍스트노드 생성
+	 
+	 let tdNode3 = document.createElement("td");	//<td></td>
+	 let addrNode = document.createTextNode(addr);	// <td> 노드에 추가할 "서울 마포구" 텍스트노드 생성
+	 
+	 
+	 tdNode1.appendChild(nameNode);	// <td>"둘리"</td>
+	 tdNode2.appendChild(telNode);	// <td>"010-5555-5555"</td>
+	 tdNode3.appendChild(addrNode);	// <td>"서울 마포구"</td>
+	 
+	 trNode.appendChild(tdNode1);	//<tr><td>"둘리"</td></tr>
+	 trNode.appendChild(tdNode2);	//<tr><td>"둘리"</td><td>"010-5555-5555"</td></tr>
+	 trNode.appendChild(tdNode3);	//<tr><td>"둘리"</td><td>"010-5555-5555"</td><td>"서울 마포구"</td></tr>
+	 
+	 tableNode.appendChild(trNode);  */
+	 
+	 trNode.appendChild(createTdNode(name));
+	 trNode.appendChild(createTdNode(tel));
+	 trNode.appendChild(createTdNode(addr));
+	 
+	 tableNode.appendChild(trNode); 
+	
+}
+
+	function createTdNode(val)
+	{
+		let textNode = document.createTextNode(val);	
+		let tdNode = document.createElement("td");
+		tdNode.appendChild(textNode);
+		
+		return tdNode;
+	}
+
+</script>
+</head>
+<body>
+<div>
+	<h1>자바스크립트를 활용한 테이블 동적 생성</h1>
+	<hr />
+</div>
+
+<div>
+	<form>
+		<label for="txtName">이름</label>
+		<input type="text" id="txtName" class="txt" /><br>
+		<label for="txtTel">전화번호</label>
+		<input type="text"  id="txtTel" class="txt"/><br>
+		<label for="txtAddr">주소</label>
+		<input type="text"  id="txtAddr" class="txt"/><br>
+		
+		<button type="button" class="btn" style="width: 260px;" onclick="addMember()">회원 정보 입력</button>
+		<br /><br>
+		
+		<table border="1" id="memberTbl">
+			<tr>
+				<th>이름</th>
+				<th>전화번호</th>
+				<th>주소</th>
+			</tr>
+			<tr>
+				<td>도우너</td>
+				<td>010-1111-1111</td>
+				<td>제주 서귀포</td>
+			</tr>
+			<tr>
+				<td>희동이</td>
+				<td>010-2222-2222</td>
+				<td>전남 여수</td>
+			</tr>
+			<tr>
+				<td>마이콜</td>
+				<td>010-3333-3333</td>
+				<td>경남 산청</td>
+			</tr>
+			<tr>
+				<td>고길동</td>
+				<td>010-4444-4444</td>
+				<td>서울 마포구</td>
+			</tr>
+		</table>
+	</form>
+</div>
+
+</body>
+</html>

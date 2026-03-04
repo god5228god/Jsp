@@ -1,0 +1,25 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+<%
+
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SendAndReceive12.jsp</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<style type="text/css">
+
+</style>
+<script type="text/javascript">
+
+</script>
+</head>
+<body>
+<div>
+	<h1>JSP를 이용한 데이터 송수신 실습 12</h1>
+	<p>SendAndReceive12.jsp● → SendAndReceive12.jsp●</p>
+	<hr />
+</div>
+</body>
+</html>

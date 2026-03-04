@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test032.html</title>
+<style type="text/css">
+		* {font-size: 16px; color: #333;}
+	.btn{
+			width: 80px; height: 30px; font-weight: bold;
+			border: none; border-radius: 7px;
+			background-color: #000; color: #fff;
+			
+		}
+	.btn:hover{ border: 2px solid #000; color: #000; background-color: #fff;}
+	a{font-size: 16px; color: #333; cursor: pointer; text-decoration: none; font-weight: normal;}
+	a:hover{color:#0f77ff;}
+	.searchBox{font-size: 20px; font-weight: bold;}
+	.searchBox input[type="text"]{width: 150px; height: 30px; padding-left: 5px; box-sizing: border-box;}
+	#aWrap{display: none; margin-left: 20px; margin-top: 30px;}
+	
+</style>
+<script type="text/javascript">
+
+	window.onload = function() {
+		let aTag = document.querySelectorAll('a');
+		for (let i = 0; i < aTag.length; i++) {
+	        aTag[i].textContent = (i+1) + ". " + aTag[i].textContent;
+	    }
+	}
+
+	function searchIcon(icon, name)
+	{
+		
+		window.opener.document.getElementById("emoji").value = name;
+		
+		window.opener.document.getElementById("textContent").textContent += " "+icon;
+		
+		
+		window.close();
+		
+	}
+	
+	function showList()
+	{
+		alert("확인");
+		document.getElementByid("aWrap").style.display = "block";
+		
+	}
+</script>
+</head>
+<body>
+	<div class="searchBox">
+		이모티콘 검색
+		<input type="text" value="하트"  />
+		<input type="button" value="검색" class="btn"  onclick="showList()" /><br>
+
+		<div id="aWrap">
+			<a href="javascript:searchIcon('♥','기본 검정 하트')">기본 검정 하트</a><br>
+			<a href="javascript:searchIcon('♡','기본 하양 하트 ')">기본 하양 하트</a><br>
+			<a href="javascript:searchIcon('❤️','빨강 하트')">빨강 하트</a><br>
+			<a href="javascript:searchIcon('🩷','분홍 하트')">분홍 하트</a><br>
+			<a href="javascript:searchIcon('🧡','주황 하트')">주황 하트</a><br>
+			<a href="javascript:searchIcon('💛','노랑 하트')">노랑 하트</a><br>
+			<a href="javascript:searchIcon('💚','초록 하트')">초록 하트</a><br>
+			<a href="javascript:searchIcon('💙','파랑 하트')">파랑 하트</a><br>
+			<a href="javascript:searchIcon('💜','보라 하트')">보라 하트</a><br> 
+			<a href="javascript:searchIcon('🤍','하양 하트')">하양 하트</a><br> 
+			<a href="javascript:searchIcon('🖤','검정 하트')">검정 하트</a><br> 
+		</div>		
+		
+	</div>
+</body>
+</html>

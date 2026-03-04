@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test018.html</title>
+<style type="text/css">
+input[type="text"]{width: 50px; height: 25px; text-align: center; margin-bottom: 15px;}
+textarea{font-family: "나눔고딕코딩"; width: 200px; height: 150px; background-color: #fff0ff; border:none;  padding: 15px 30px; font-size: 14px; box-sizing: border-box;}
+.btn{width: 200px; height: 35px; margin-bottom: 15px; border:none; background-color:#c291a5; color: #fff; box-shadow: 2px 2px 2px #ccc;}
+</style>
+<script type="text/javascript">
+
+/* 
+	※ 자바스크립트 변수 사용 키워드
+	- var
+	- let
+	- const
+	
+	※ 유연성
+	var > let > const
+	
+	※ 안정성
+	const > let > var
+	
+*/
+
+/* 	var name = "홍길동";
+	alert(name);
+	var name = "이순신";
+	alert(name); */
+/* 
+	let name = "홍길동";
+	alert(name);
+	let name = "이순신";
+	alert(name);
+	//---==>> Uncaught SyntaxError: Identifier 'name' has already been declared */
+	
+
+/* 	const name = "홍길동";
+	alert(name);
+	const name = "이순신";
+	alert(name); 
+	//--==>> Test018.html:41 Uncaught SyntaxError: Identifier 'name' has already been declared (at Test018.html:41:8) */
+
+	
+/* 	let name = "홍길동";
+	alert(name);
+	name = "이순신";
+	alert(name); */
+	
+	/* 
+	const name = "홍길동";
+	alert(name);
+	name = "이순신";
+	alert(name);  
+	//--==>> Uncaught TypeError: Assignment to constant variable.
+     */
+	
+	
+function addMember(){
+
+	let num = 0;
+	let infoArr = new Array();	//-- 자바스크립트 배열 구성
+	
+	do {
+		// ※ prompt(): 대화창을 통해 데이터 입력 안내
+		//	→ 입력 데이터를 변수 infoStr에 담아내기
+		let infoStr = prompt("이름 전화번호("+ (num+1) +"): ");
+		if(infoStr == "." || infoStr == null || infoStr == " " ||infoStr =="")
+			break;
+		
+		infoArr[num] = infoStr;
+		num++;
+
+	} while (true);
+	
+	document.getElementById("txtCount").value = infoArr.length;
+
+	
+	document.getElementById("txtResult").value = "이름   전화번호 \n\n";
+	for(var i = 0; i<infoArr.length; i++){
+		document.getElementById("txtResult").value += infoArr[i] +"\n";
+	}
+	 
+	
+}
+
+</script>
+</head>
+<body>
+<div>
+	<h1>자바스크립트 활용</h1>
+	<hr />
+</div>
+<!-- 
+	여러 명의 이름과 전화번호를 입력받고,
+	그 내용을 전체 출력하는 페이지를 구성한다.
+	HTML, CSS, JS를 활용한다.
+	단, 데이터를 입력받는 과정에서 prompt()를 활용한다.
+	
+	페이지 레이아웃
+	---------------------------------------------------
+	
+	< 회원 정보 입력 >			→ button → click → 이름 전화번호(1): 강명철 010-1111-1111
+													  이름 전화번호(2): 안진모 010-2222-2222	
+													  이름 전화번호(3): 양호열 010-3333-3333	
+													  이름 전화번호(4): .	
+	
+	전체 회원 수 : [  3	] 명	→ text 		#txtCount
+	------------------------ 	→ textarea 	#txtResult
+	이름	전화번호
+	------------------------
+	강명철 010-1111-1111
+	안진모 010-2222-2222
+	양호열 010-3333-3333	
+	------------------------
+	
+	
+	---------------------------------------------------
+ -->
+ <div>
+ 	<form>
+ 		<input type="button" class="btn" value="회원 정보 입력" onclick="addMember()"/>
+ 		<br>
+ 		
+ 		<label for="txtCount">전체 회원수: </label>
+ 		<input type="text" id="txtCount" readonly="readonly" /> 명
+ 		<br>
+ 		<textarea id="txtResult" readonly="readonly"></textarea>
+ 	</form>
+ </div>
+</body>
+</html>

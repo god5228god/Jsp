@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test010.html</title>
+<style type="text/css">
+	*
+	{
+		color: #333;
+		font-family: "맑은 고딕";
+		
+	}
+	input.box:focus
+	{
+		background-color: lime;
+	}
+	
+	input.btn:hover
+	{
+		color: orange;
+		font-weight: bold;
+	}
+	
+	input.numberBox
+	{
+		width: 50px; text-align: right;
+	}
+</style>
+<script type="text/javascript">
+	
+
+	function aBtnOnClick()
+	{
+		document.getElementById("txtRight").value = document.getElementById("txtLeft").value;
+	}
+
+	function bBtnOnClick()
+	{
+		document.getElementById("txtLeft").value = document.getElementById("txtRight").value;
+	}
+	
+	function resultBtn(){
+		
+		var num1 = parseInt(document.getElementById("txtNumber01").value);
+		var num2 = parseInt(document.getElementById("txtNumber02").value);
+		
+		// Number() 생성자 함수
+		// Number(document.getElementById("txtNumber01").value) → 숫자 변환
+		
+		document.getElementById("txtResult").value = num1+num2;
+	}
+</script>
+</head>
+<body>
+<div>
+	<h1>자바스크립트 기본 관찰</h1>
+	<hr />
+</div>
+
+<div>
+	<input type="text" class="box" id="txtLeft" />
+	<input type="button" value="A 버튼" class="btn" id="btnA" onclick="aBtnOnClick()"/>
+	<input type="button" value="B 버튼" class="btn" id="btnB" onclick="bBtnOnClick()"/>
+	<input type="text" class="box" id="txtRight" />
+
+</div>
+<br><br>
+
+<hr>
+<div>
+	<input type="text" class="numberBox" id="txtNumber01" />
+	+
+	<input type="text" class="numberBox" id="txtNumber02" />
+	
+	<input type="button" value="=" class="btn" id="btnResult" onclick="resultBtn()"/>
+	
+	<input type="text" class="numberBox" id="txtResult" disabled="disabled" />
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

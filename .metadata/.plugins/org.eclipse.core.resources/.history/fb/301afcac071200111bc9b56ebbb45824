@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test029.html</title>
+</head>
+<body>
+<div>
+	<h1>자바스크립트 활용</h1>
+	<hr />
+</div>
+<div>
+	<h2>주소검색</h2>
+	<form action="">
+		기본주소
+		<input type="text" id="addr1" readonly="readonly" class="txt" />
+		<input type="button" class="btn" value="검색" />
+		<br><br>
+		
+	</form>
+</div>
+</body>
+</html>

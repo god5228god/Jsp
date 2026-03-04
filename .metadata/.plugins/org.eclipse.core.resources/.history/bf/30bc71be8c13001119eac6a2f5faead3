@@ -1,0 +1,15 @@
+/* ============================
+ 	Test005.java
+ 	- Servlet 실습 및 관찰
+   ============================ */
+
+package com.svt;
+
+import javax.servlet.http.HttpServlet;
+
+public class Test005 extends HttpServlet
+{
+
+	private static final long serialVersionUID = 1L;
+
+}

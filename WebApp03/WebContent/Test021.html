@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test021.html</title>
+<style type="text/css">
+table{border-collapse: collapse;}
+th{width: 40px; background-color: #ccc;}
+td{text-align: center;}
+.txt{width: 60px; height: 25px; text-align: right; margin-right: 5px; padding-right: 10px; box-sizing: border-box; border: none; border-bottom:  1px solid #222; font-size: 16px}
+.txt2{width: 30px; margin-left: 15px;}
+.btn{width: 300px; height: 35px; font-size: 18px; background-color: #a1c983; border: none; color: #fff; box-shadow: 2px 2px 2px #ccc;}
+.btn:hover{background-color: #7cb55b; color: #fff;}
+th:first-child, td:nth-child(1) {color : #e03522;}
+th:last-child, td:nth-child(7)  {color : #2294e0;}
+#txtYear{margin-left: 60px;}
+</style>
+<script type="text/javascript">
+
+	function addCalender()
+	{
+		
+		let year = document.getElementById("txtYear").value;
+		let month = document.getElementById("txtMonth").value;
+		let tblNode = document.getElementById("calenderTbl");
+		let trNode = document.createElement("tr");
+
+		while(tblNode.rows.length>1){
+			tblNode.deleteRow(1);
+		}
+		
+		let endDate = [31, 0, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+		
+		if(month=="2"){
+			 endDate[1]= isLeapYear(year);
+		}
+		
+		let mEdate = endDate[month-1];
+		
+		
+		
+		let startDay = getDays(year, month);
+		
+		
+ 		for(var i = 0 ; i<startDay; i++){
+ 			
+			trNode.appendChild(createTdNode(""));
+		}
+ 		
+		
+		let cnt = startDay;
+		
+		for(var i = 1 ; i<=mEdate; i++){
+			trNode.appendChild(createTdNode(i));
+			cnt++;
+			
+			if(cnt%7==0){
+				tblNode.appendChild(trNode);
+				trNode = document.createElement("tr");
+			}
+		}
+		
+		if (cnt % 7 != 0) {
+	        tblNode.appendChild(trNode);
+	    }
+	}
+	
+	function isLeapYear(year){
+		return new Date(year, 2, 0).getDate();
+	}
+	
+	function createTdNode(val)
+	{
+		let textNode = document.createTextNode(val);
+		let tdNode = document.createElement("td");
+		tdNode.appendChild(textNode);
+		
+		return tdNode;
+	}
+	
+	function getDays(year, month){
+		return new Date(year, (month-1), 1).getDay();
+	}
+
+</script>
+</head>
+<body>
+<div>
+	<h1>테이블 동적 생성으로 만년 달력 그리기</h1>
+	<hr />
+</div>
+
+<div>
+	<form>
+		<input type="text" id="txtYear" class="txt" />년
+		<input type="text" id="txtMonth" class="txt txt2" />월
+		<br><br>
+		
+		<button type="button" class="btn"  onclick="addCalender()">만년달력 그리기</button>
+		<br><br>
+		
+		<table border="1" id="calenderTbl">
+			<tr>
+				<th>일</th>
+				<th>월</th>
+				<th>화</th>
+				<th>수</th>
+				<th>목</th>
+				<th>금</th>
+				<th>토</th>
+			</tr>
+		</table>
+	</form>
+</div>
+</body>
+</html>

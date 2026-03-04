@@ -1,0 +1,41 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+<%
+	// 스크립릿 영역
+	// ※ 넘어온 데이터에 한글이 포함되어있지 않으므로 
+	// request.setCharacterEncoding("UTF-8");
+	// 이 코드는 생략 가능
+	
+	// 이전 페이지로(Send03.html)부터 넘어온 데이터 수신
+	//-- int01, int02, operator
+
+	int num1 = Integer.parseInt(request.getParameter("int01"));
+	int num2 = Integer.parseInt(request.getParameter("int02"));
+	String op = request.getParameter("operator");
+	int result = 0;
+	
+	if(op.equals("+")){
+		result = num1 + num2;
+	}else if(op.equals("-")){
+		result = num1 - num2;
+	}else if(op.equals("*")){
+		result = num1 * num2;
+	}else{
+		result = num1 / num2;
+	}
+	
+	
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body>
+<div>
+	<p>입력하신 <span><%= num1 %></span>과(와) <span><%= num2 %></span>의 연산 결과는
+		<span><%=result %>입니다.</span></p>
+</div>
+</body>
+</html>

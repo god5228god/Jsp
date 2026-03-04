@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test035.html</title>
+<script type="text/javascript">
+
+	function actionAttribute()
+	{
+		let image = document.getElementById("image");
+		
+		// 속성 제어
+		image.src = "https://placehold.in/300x200.png";
+		image.width = 300;
+		image.height = 200;
+	}
+</script>
+</head>
+<body>
+<div>
+	<h1>자바스크립트 활용</h1>
+	<hr>
+</div>
+<div>
+	<h2>속성 제어</h2>
+	<input type="button" value="결과 확인" class="btn" onclick="actionAttribute()"/>
+	<br><br>
+	<img src=" alt=""  id="image"/>
+</div>
+</body>
+</html>

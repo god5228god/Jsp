@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Test010.html</title>
+		<style>
+			*
+			{
+				font-size: 20px;
+				font-weight: bold;
+				font-family: "맑은 고딕";
+				color: #334433;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1>한 줄 데이터 입력상자 / 암호 입력 상자</h1>
+			<hr>
+		</div>
+		<div>
+			<form>
+				<label>
+					회원 아이디
+					<input type= "text" name="name" size="10" maxlength="8">
+				</label>
+				<br><br>
+				<label for ="pw">패스워드</label>
+				<input type="password" name="pwd" size="10" maxlength="10">
+			</form>
+		</div>
+		
+		<!-- maxlength 속성 활용 -->
+		<div>
+			<form>
+				<label>
+					휴대폰 번호
+					<input type="text" name="phone1" size="5" maxlength="3"> -
+					<input type="text" name="phone2" size="6" maxlength="4"> -
+					<input type="text" name="phone3" size="6" maxlength="4">
+				</label>
+			</form>
+		</div>
+		
+	</body>
+</html>

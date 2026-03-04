@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test034.html</title>
+<style type="text/css">
+
+</style>
+<script type="text/javascript">
+	
+	function actionSytle(){
+		
+		//alert("확인");
+		let resultDiv = document.getElementById("result");
+		
+		let output ="";
+		for(let i = 0; i<256;  i++) // i: 0 ~ 255
+		{
+			output += "<div></div>";
+		}
+		resultDiv.innerHTML = output;
+		
+		
+		
+		
+	}
+
+</script>
+</head>
+<body>
+<div>
+	<h1>자바스크립트 활용</h1>
+	<hr>
+</div>
+
+<div>
+	<h2>스타일 제어</h2>
+	
+	<input type="button" value="결과 확인"  class="btn" onclick="actionSytle()"/>
+	
+	<div id="result">
+	
+	</div>
+</div>
+
+
+</body>
+</html>

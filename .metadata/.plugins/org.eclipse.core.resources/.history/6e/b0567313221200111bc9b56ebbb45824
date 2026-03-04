@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test031.html</title>
+<style type="text/css">
+	* {	padding: 0; margin: 0; font-size: 16px; color: #333;}
+	.btn{
+			position: relative; top: 2px; left: 210px;
+			width: 80px; height: 30px; font-weight: bold;
+			border: none; border-radius: 7px;
+			background-color: #000; color: #fff;
+			
+		}
+	.btn:hover{ border: 2px solid #000; color: #000; background-color: #fff;}
+	.searchWrap{
+				width: 600px;
+				border: 2px solid #000;
+				margin: 20px auto;
+				padding: 20px; box-sizing: border-box;
+				} 
+	h2{font-size: 30px; text-align: center; margin-bottom: 30px;}
+	.txt{height: 30px; width: 120px; padding-left: 5px; border: none; border-bottom: 1px solid #222;}
+	#emoji{position: relative; left: 200px;}
+	#textContent{
+					background-color: #fff;
+					text-align: center; font-size: 18px; 
+				}
+	label{font-size: 18px;}
+	#paste{border: none; border-bottom: 1px solid #000; width: 80px;}
+</style>
+<script type="text/javascript">
+	function searchEmoji()
+	{
+		// Test032.html 창 열기
+		window.open("Test032.html", "test", "width=500, height=400");
+	}
+</script>
+</head>
+<body>
+<div class="searchWrap">
+	<h2>특수문자 검색</h2>
+	<form>
+		<input type="text" id="emoji" readonly="readonly"  class="txt" />
+		<input type="button" class="btn" value="검색" onclick="searchEmoji()" />
+		<br><br>
+		
+		
+		<span id="textContent" >
+			선택한 특수문자: 
+		</span><br>
+		<label for="paste">붙여넣기 확인(ctrl+v) </label>
+		<input type="text" id="paste" />
+	</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test025.html</title>
+<style type="text/css">
+	.btn{margin: 20px 0;width: 200px; height: 40px; font-size: 18px; border: none;  background-color: black; color: #fff; font-weight: bold;}
+	.btn:hover{background-color: #fff; color: black; border: 3px solid black;}
+</style>
+<script type="text/javascript">
+	function actionChoice(){
+		let radioObj = document.getElementsByName("size");
+		
+		// 확인
+		// alert(radioObj);
+		//--==>> [object NodeList] → 자바스크립트 배열
+		// alert(radioObj.length);
+		//---==>> 6 
+		
+		// 확인
+		//alert(radioObj[0].checked);
+		//alert(radioObj[1].checked);
+		//alert(radioObj[2].checked);
+		//alert(radioObj[3].checked);
+		//alert(radioObj[4].checked);
+		//alert(radioObj[5].checked);
+		//--==>> 선택된 라디오버튼은 true, 나머지는 false
+		
+		
+//		let msg = "";
+		let msg = "선택된 항목이 존재하지 않습니다.";
+		
+		for(let i=0; i<radioObj.length; i++)
+		{
+			// 확인
+			//alert(radioObj[i].checked);
+			if(radioObj[i].checked){
+				// 확인
+				//alert(i);
+				//alert(radioObj[i].value);
+				
+				msg = "선택한 사이즈는 아이스크림을 " + radioObj[i].value +"종류 고를 수 있습니다.";
+				break;
+				
+			}
+		}
+		// 확인
+		alert(msg);
+		
+		
+	}
+</script>
+</head>
+<body>
+<div>
+	<h1>자바스크립트 활용</h1>
+	<hr />
+</div>
+
+<div>
+	<h2>라디오버튼, 체크박스 다루기</h2>
+	
+	<form>
+		--- 사이즈 선택 --- <br><br>
+		
+		<!-- name 속성 check -->
+		<input type="radio" name="size" id="a" value="1" />
+		<label for="a">싱글(1)</label>
+		<input type="radio" name="size" id="b" value="2" />
+		<label for="b">더블(2)</label>
+		<input type="radio" name="size" id="c" value="3" />
+		<label for="c">파인트(3)</label>
+		<input type="radio" name="size" id="d" value="4" />
+		<label for="d">쿼터(4)</label>
+		<input type="radio" name="size" id="e" value="5" />
+		<label for="e">패밀리(5)</label>
+		<input type="radio" name="size" id="f" value="6" />
+		<label for="f">하프갤런(6)</label>
+		<br><br>
+		
+		<button type="button" class="btn" onclick="actionChoice()">확인</button>
+	</form>
+</div>
+</body>
+</html>

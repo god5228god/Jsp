@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test040.html</title>
+<link rel="stylesheet" href="css/main.css" type="text/css" />
+<script type="text/javascript">
+
+	function objTest()
+	{
+		// 사용자 정의 객체
+		//-- Test039.html에서와 마찬가지로 사용자 정의 객체 구성
+		//   단, 차이점 비교 확인 CHECK!
+		
+		function Blog(b,d)
+		{
+			// 주요 속성 구성
+			this.body = b;
+			this.date = d;
+			
+			// 날짜 출력용 함수 정의
+			//this.userLocalString = 기능;
+			this.userLocalString = function()
+			{
+				return d.getFullYear() + "-" + (d.getMonth()+1) +"-" + d.getDate();
+			};
+		}
+		
+		// 객체 생성
+		let blog = new Blog("블로그 개설","2025-11-17");
+		let str = blog.body + " / " + blog.date;
+		
+		// 확인
+		//alert(str);
+		
+		// Test039.html에서와 마찬가지로
+		// 사용자 정의 객체 여러 개를 자바스크립트 배열 구조에 저장
+		// 단, 차이점 비교 확인 CHECK!
+		// → 자바스크립트 내장 객체 활용
+		let arr = [new Blog("블로그 개설", new Date("2025/11/17"))
+		 		 , new Blog("블로그 레이아웃 구성", new Date("2025/11/22"))
+		 		 , new Blog("생성자 이용한 객체 생성", new Date("2025/12/25"))];
+		
+		/*
+			※ 자바스크립트에서의 날짜 데이터
+			
+			Date 객체는 날짜와 시간 작업을 하는데 사용되는
+			가장 기본적인 자바스크립트 내장 객체이다.
+			
+			let now = new Date();
+		
+			now.toString();
+			now.toLocalString();
+			now.toLocalDateString();
+			now.toLocalTimeString();
+			now.getFullYear();
+			now.getMonth()+1 ;		//-- CHECK! 월 단위는 0부터 시작
+			
+			※ 주의
+			
+			let userDate1 = new Date("2026/02/26");			//--(○)
+			let userDate2 = new Date("2026,02,26");			//--(○)
+			let userDate3 = new Date("Feb, 26, 2026");		//--(○)
+			let userDate4 = new Date("2026-02-26");			//--(×)
+			let userDate5 = new Date("20260226");			//--(×)
+		*/
+		
+		
+		
+		
+	}
+</script>
+</head>
+<body>
+<div>
+	<h1>자바스크립트 활용</h1>
+	<hr>
+</div>
+<div>
+	<h2>자바스크립트 객체</h2>
+	<h3>(사용자 정의 객체)</h3>
+	
+	<div>
+		<input type="button" value="사용자 정의 객체 테스트" class="btn control" onclick="objTest()"/>
+		<br><br>
+		
+		<div id="result">
+		</div>
+		
+	</div>
+</div>
+</body>
+</html>

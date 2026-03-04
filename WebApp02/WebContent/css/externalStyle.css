@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/* externalStyle.css */
+
+h3{color: blue;}
+
+h4{color: red;}
+
+p{
+	font-size: 20pt;
+	font-weight:  bold;
+	color: green;
+}

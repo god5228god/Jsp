@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Test009.html</title>
+		<style>
+			*
+			{
+				font-size: 20px;
+				font-weight: bold;
+				font-family: "맑은 고딕";
+				color: #334433;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<!-- 데이터 전송 및 페이지 요청 방식 : GET  -->
+			<form method ="get">
+				<input type ="text" name = "search">
+		
+				<input type = "button" value ="제출">
+				<input type = "reset" value ="제출">
+				<input type = "submit" value="제출">
+				<button>제출</button>
+			</form>	
+		</div>
+		<br><br>
+		<div>
+			<!-- 데이터 전송 및 페이지 요청 방식 : POST  -->
+			<form method ="post">
+				<input type ="text" name = "search">
+		
+				<input type = "button" value ="제출">
+				<input type = "reset" value ="제출">
+				<input type = "submit" value="제출">
+				<button>제출</button>
+			</form>	
+		</div>
+		<br><br>
+		
+		<div>
+			<form>
+				<input type = "text" name ="text" value="text"><br>
+				<input type = "password" name ="password" value="password"><br>
+				<input type = "file" name ="file" value="file"><br>
+				<input type = "checkbox" name ="checkbox" value="checkbox"><br>
+				<input type = "radio" name ="radio" value="radio"><br>
+				<br><br>
+				
+				<input type = "hidden" name ="hidden" value="hidden"><br>
+				<br><br>
+				
+				<input type ="button" value ="button"><br>
+				<input type ="reset" value ="reset"><br>
+				<input type ="submit" value ="submit"><br>
+				<button type ="button">button</button>
+				
+			</form>
+		</div>
+		<br><br>
+		
+		<div>
+			<form>
+<!-- 				이름 <input type = "text" name ="text" value="text"><br> -->
+<!-- 				<label>이름 <input type = "text" name ="text"><br></label> -->
+				<label for="name">이름</label>
+				<input type = "text" name ="text" id="name"><br>
+				<input type = "password" name ="password" value="password"><br>
+				<input type = "file" name ="file" value="file"><br>
+				
+			
+				<label><input type = "checkbox" name ="checkbox" value="checkbox"> 사과<br></label>
+				<label>				
+					<input type = "checkbox" name ="checkbox" value="checkbox">
+					딸기
+				</label>
+				<br><br>	
+							
+				<input type = "checkbox" name ="checkbox" value="checkbox" id="wm"> 
+				<label for ="wm">수박</label>
+				<br><br>
+				
+				
+				<input type = "radio" name ="radio1" value="female"> 여성<br>
+				<input type = "radio" name ="radio2" value="male"> 남성<br>
+				<br><br>
+				
+				<label><input type = "radio" name ="gender" value="female"> 여성</label><br>
+				<input type = "radio" name ="gender" value="male" id="male">
+				<label for ="male">남성</label>
+				<br><br>
+				
+				<input type = "hidden" name ="hidden" value="hidden"><br>
+				<br><br>
+				
+				<input type ="button" value ="button"><br>
+				<input type ="reset" value ="reset"><br>
+				<input type ="submit" value ="submit"><br>
+				<button type ="button">button</button>
+				
+			</form>
+		</div>
+		<br><br>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>

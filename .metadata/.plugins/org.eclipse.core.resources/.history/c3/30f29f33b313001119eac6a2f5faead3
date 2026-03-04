@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Send01.html</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body>
+<!-- 
+	○ 데이터 송수신 실습
+	
+	- 이름과 전화번호를 입력받는 html 페이지를 구성한다.
+	
+		이름 	 [ textbox	] 	← 조세빈
+		전화번호 [	textbox	] 	← 010-1111-1111
+		
+		< 회원 가입> 			→ button
+		
+	- 회원 가입 버튼 클릭 시
+		『조세빈님, 회원 가입이 완료되었습니다.
+		  회원님께서 등록하신 전화번호는 010-1111-1111 입니다.』
+	  라는 내용을 출력하는 JSP 페이지를 전달할 수 있도록 한다.
+	  
+	- 사용자 최초 요청 주소
+		http://localhost:3306/WebApp06/Send01.html
+ -->
+ 
+ 
+</body>
+</html>

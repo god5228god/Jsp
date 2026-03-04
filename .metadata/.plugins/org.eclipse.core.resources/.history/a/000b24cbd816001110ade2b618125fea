@@ -1,0 +1,85 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Send09.jspe</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript">
+
+	function formChange(obj)
+	{
+		// 확인
+		//alert("확인");
+		//alert(obj);
+		//---==>> [object HTMLSelectElement]
+		// alert(obj.form);
+		//--==>> [object HTMLFormElement]
+		
+		// this.form(매개변수)
+		// alert(obj);
+		//--==>> [object HTMLFormElement]
+		
+		// ※ obj 변수(이 함수의 매개변수)에는 최종적으로 form 객체가 저장되어 있다.
+		//	  → form에 대한 액션 처리 가능
+		
+		
+	}
+
+</script>
+</head>
+<body>
+<div>
+	<h1>JSP를 이용한 데이터 송수신 실습 09</h1>
+	<p>Send09.jsp● → Receive09.jsp○</p>
+	<hr />
+</div>
+
+<!-- 
+	○ 데이터 송수신 실습 09
+	
+		- 구구단 단수를 입력받아 서버로 전송해주는 형태의 페이지를 구현한다.
+		
+		- 단, submit 버튼 없이 이벤트 처리를 할 수 있도록 한다.
+		
+		  단 수 선택[--선택하세요-- ▼] → select 
+		  					2단
+		  					3단
+		  					4단
+		  					5단
+		  					6단
+		  					7단
+		  					8단
+		  					9단
+		 - select 선택 시
+		   해당 단의 구구단 내용을 출력하는 JSP 페이지(Receive09.jsp)로
+		   데이터를 전당하여 내용을 구성할 수 있도록 한다.
+		   
+		 - 사용자 최초 요청 페이지
+		 	http://localhost:3306/WebApp06/Send09.jsp
+		 	
+		 - 물리적인 파일 구성
+		 	·Send09.jsp
+		 	·Recieve09.jsp
+ -->
+ 
+ <div>
+ 	<form action="Receive09.jsp" method="post" id="form01">
+ 		단 수 선택
+ 		<!-- <select name="dan" id="dan" onchange="document.getElementById('form01').submit()"> -->
+ 		<select name="dan" id="dan" onchange="formChange(this.form)">
+ 			<option selected disabled >-- 선택하세요 --</option>
+ 			<option value="1" >1단</option>
+ 			<option value="2" >2단</option>
+ 			<option value="3">3단</option>
+ 			<option value="4">4단</option>
+ 			<option value="5">5단</option>
+ 			<option value="6">6단</option>
+ 			<option value="7">7단</option>
+ 			<option value="8">8단</option>
+ 			<option value="9">9단</option>
+ 		</select>
+ 	</form>
+ </div>
+</body>
+</html>

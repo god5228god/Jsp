@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test023.html</title>
+<style type="text/css">
+@font-face {
+    font-family: 'OngleipParkDahyeon';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+#txtUser{width: 50px; height: 20px; font-size: 16px; text-align: center;}
+.btn{width: 150px; height: 40px; font-size: 18px; border: none; border-radius: 2px;
+	 background-color: #ffaa82; color: #fff; font-weight: bold; margin: 10px 0;}
+#txtResult{width: 350px; height: 20px; border:none; border-bottom: 2px solid #ccc; font-size: 20px;
+			text-align: center; margin-top: 20px;
+			font-family: 'OngleipParkDahyeon';
+			}
+</style>
+<script type="text/javascript">
+
+	let rsp = ['가위', '바위', '보'];
+	
+	function actionGame(){
+		
+		// ※ Math.random()
+		// 0.0 ~ 1.0 사이의 실수 형태의 난수 발생
+		
+		let random = Math.floor(Math.random()*3);
+		
+		let user = parseInt(document.getElementById("txtUser").value)-1;
+		if(!(user>=0 && user<=2)){
+			alert("다시 입력");
+			return;
+		}
+		
+		
+		let result = "";
+		switch (user - random) {
+		case 0:
+			result = "비겼습니다.";	break;
+		case -1: case 2:
+			result = "컴퓨터가 이겼습니다."; break;
+		case 1: case -2:
+			result = "사용자가 이겼습니다."; break;
+		}
+		
+		/*
+		if(user==random){
+			result = "비겼습니다.";
+		}else if((user%3) == (random+2)%3){
+			result = "컴퓨터가 이겼습니다.";
+		}else{
+			result = "사용자가 이겼습니다."; 
+		}
+		*/
+		
+		document.getElementById("txtResult").value = "사용자: " + rsp[user] + "  컴퓨터: "+ rsp[random] +" → "+ result;
+		
+		
+	}
+	
+</script>
+</head>
+<body>
+	<div>
+		<h1>자바스크립트 활용</h1>
+		<hr />
+	</div>
+	<!--
+		가위 바위 보 게임을 구성한다.
+		HTML, CSS, JS를 활용한다.
+		이 과정에서 자바스크립트 난수 발생 함수를 찾아 활용한다.
+		
+		→ w3schools.com
+		→ koxo.com
+		
+		페이지 레이아웃
+		-----------------------------
+		
+		입력(1. 가위, 2.바위, 3.보) [ 2 ] 		→ text 	#txtUser
+		
+		<게임 결과 확인>						→ button
+		
+		[사용자: 바위 컴퓨터:보 → 컴퓨터가 이겼습니다.] 	→ text 	#txtResult
+		
+		-----------------------------
+		
+	  -->
+	
+		<div>
+			<form>
+				<label for="txtUser">입력(1. 가위, 2.바위, 3.보) </label><br>
+				<input type="text" id="txtUser"/>
+				<br>
+				<input type="button" value="게임 결과 확인" class="btn" onclick="actionGame()"/>
+				<br>
+				<input type="text" id="txtResult" />
+			</form>
+		</div>
+</body>
+</html>

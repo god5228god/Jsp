@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test032.html</title>
+<style type="text/css">
+		* {font-size: 16px; color: #333;}
+	.btn{
+			position: relative; top: 2px; left: 210px;
+			width: 80px; height: 30px; font-weight: bold;
+			border: none; border-radius: 7px;
+			background-color: #000; color: #fff;
+			
+		}
+	li{list-style: none;}
+	.btn:hover{ border: 2px solid #000; color: #000; background-color: #fff;}
+	a{font-size: 16px; color: #333; cursor: pointer; text-decoration: none;}
+	a:hover{color:#0f77ff;}
+	
+</style>
+<script type="text/javascript">
+	function searchIcon(icon, name)
+	{
+		window.opener.document.getElementById("emoji").value = name;
+		
+		window.opener.document.getElementById("textContent").textContent += " "+icon;
+		
+		window.close();
+		
+	}
+</script>
+</head>
+<body>
+	<div>
+		이모티콘 검색
+		<input type="text" value="하트"  />
+		<input type="button" value="검색" class="btn" /><br>
+
+		
+		<form>
+			<ul>
+				<li>
+					<input type="checkbox" name="icon" id="li1"/>
+					<label for="li1">
+						<a href="javascript:searchIcon('♥','검정 하트')">검정 하트</a>
+					</label>
+				</li>
+				<li>
+					<input type="checkbox" name="icon" id="li2"/>
+					<label for="li2">
+						<a href="javascript:searchIcon('♡','하양 하트 ')">하양 하트</a>
+					</label>
+				</li>
+				<li>
+					<input type="checkbox" name="icon" id="li3"/>
+					<label for="li3">
+						<a href="javascript:searchIcon('❤️','빨강 하트')">빨강 하트</a>
+					</label>
+				</li>
+				<li>
+					<input type="checkbox" name="icon" id="li4"/>
+					<label for="li4">
+						<a href="javascript:searchIcon('🩷','분홍 하트')">분홍 하트</a>
+					</label>
+				</li>
+				<li>
+					<input type="checkbox" name="icon" id="li5"/>
+					<label for="li5">
+						<a href="javascript:searchIcon('🧡','주황 하트')">주황 하트</a>
+					</label>
+				</li>
+				<li>
+					<input type="checkbox" name="icon" id="li6"/>
+					<label for="li6">
+						<a href="javascript:searchIcon('💛','노랑 하트')">노랑 하트</a>
+					</label>
+				</li>
+				<li>
+					<input type="checkbox" name="icon" id="li7"/>
+					<label for="li7">
+						<a href="javascript:searchIcon('💚','초록 하트')">초록 하트</a>
+					</label>
+				</li>
+				<li>
+					<input type="checkbox" name="icon" id="li8"/>
+					<label for="li8">
+						<a href="javascript:searchIcon('💙','파랑 하트')">파랑 하트</a>
+					</label>
+				</li>
+				<li>
+					<input type="checkbox" name="icon" id="li9"/>
+					<label for="li0">
+						<a href="javascript:searchIcon('💜','보라 하트')">보라 하트</a>
+					</label>
+				</li>
+				
+			</ul>
+			<input type="button" vale="이모티콘 추가"/>
+		</form>
+
+		
+	</div>
+</body>
+</html>

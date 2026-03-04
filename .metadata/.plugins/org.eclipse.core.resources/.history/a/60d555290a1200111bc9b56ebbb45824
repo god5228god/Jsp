@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test030.html</title>
+</head>
+<body>
+	<div>
+		<form>
+			주소검색
+			<input type="text" value="마포구"/>
+			<input type="button" value="검색"/><br><br>
+		</form>
+	</div>
+</body>
+</html>

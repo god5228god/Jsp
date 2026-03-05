@@ -1,0 +1,92 @@
+SELECT USER
+FROM DUAL;
+--==>> SCOTT
+
+--○ 테이블 목록 확인
+SELECT *
+FROM TAB;
+
+--○ 휴지통 비우기
+PURGE RECYCLEBIN;
+--==>> RECYCLEBIN이(가) 비워졌습니다.
+
+--○ 다시 테이블 목록 확인
+SELECT *
+FROM TAB;
+
+
+--○ 기존 테이블 제거
+DROP TABLE TBL_MEMBER;
+--==>> Table TBL_MEMBER이(가) 삭제되었습니다.
+
+--○ 기존 시퀀스 제거
+DROP SEQUENCE MEMBERSEQ;
+--==>> 에러 발생
+--ORA-02289: sequence does not exist
+
+--○ 실습 테이블 생성
+-- 테이블명: TBL_MEMBER
+CREATE TABLE TBL_MEMBER
+( SID   NUMBER
+, NAME  VARCHAR2(30)
+, TEL   VARCHAR2(40)
+, CONSTRAINT MEMBER_SID_PK PRIMARY KEY(SID)
+);
+--==>> Table TBL_MEMBER이(가) 생성되었습니다.
+
+DROP TABLE TBL_MEMBER;
+
+
+--○ 시퀀스 생성
+-- 시퀀스명: MEMBERSEQ
+CREATE SEQUENCE MEMBERSEQ
+NOCACHE;
+--==>> Sequence MEMBERSEQ이(가) 생성되었습니다.
+
+
+--○ 데이터 입력 쿼리문 구성
+INSERT INTO TBL_MEMBER(SID, NAME, TEL)
+VALUES(MEMBERSEQ.NEXTVAL, '윤주열','010-1111-1111');
+--> 한 줄 구성
+INSERT INTO TBL_MEMBER(SID, NAME, TEL) VALUES(MEMBERSEQ.NEXTVAL, '윤주열','010-1111-1111')
+;
+--==>> 1 행 이(가) 삽입되었습니다.
+
+--○ 샘플 데이터 추가 입력
+INSERT INTO TBL_MEMBER(SID, NAME, TEL) VALUES(MEMBERSEQ.NEXTVAL, '이수빈','010-2222-2222')
+;
+INSERT INTO TBL_MEMBER(SID, NAME, TEL) VALUES(MEMBERSEQ.NEXTVAL, '임유훤','010-3333-3333')
+;
+INSERT INTO TBL_MEMBER(SID, NAME, TEL) VALUES(MEMBERSEQ.NEXTVAL, '정세찬','010-4444-4444')
+;
+
+--==>> 1 행 이(가) 삽입되었습니다. * 3
+
+--○ 테이블 전체 리스트 조회 쿼리문 구성
+SELECT SID, NAME, TEL
+FROM TBL_MEMBER
+ORDER BY SID;
+--> 한 줄 구성
+SELECT SID, NAME, TEL FROM TBL_MEMBER ORDER BY SID
+;
+--==>>
+/*
+1	윤주열	010-1111-1111
+2	이수빈	010-2222-2222
+3	임유훤	010-3333-3333
+4	정세찬	010-4444-4444
+*/
+
+--○ 커밋
+COMMIT;
+--==>> 커밋 완료.
+
+
+--○ 인원 수 확인 쿼리문 구성
+SELECT COUNT(*) AS COUNT
+FROM TBL_MEMBER;
+--> 한 줄 구성
+SELECT COUNT(*) AS COUNT FROM TBL_MEMBER
+;
+--==>>4
+

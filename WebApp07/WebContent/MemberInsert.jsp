@@ -12,7 +12,7 @@
 	String userName = request.getParameter("userName");
 	String userTel = request.getParameter("userTel");
 	
-	// ※ 수신산 데이터를 활용하여 데이터베이스 액션 처리
+	// ※ 수신한 데이터를 활용하여 데이터베이스 액션 처리
 	
 	// 데이터베이스 연결
 	Connection conn = DBConn.getConnection();

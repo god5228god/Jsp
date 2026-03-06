@@ -1,0 +1,112 @@
+package com.test;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import com.util.DBConn;
+
+public class ScoreDAO
+{
+	private Connection conn;
+	
+	public ScoreDAO() throws ClassNotFoundException, SQLException
+	{
+		conn = DBConn.getConnection();
+	}
+	
+	// 데이터 연산
+	/*	public ArrayList<ScoreDTO> calc(ScoreDTO dto) {
+			
+			ArrayList<ScoreDTO> result = new ArrayList<ScoreDTO>();
+			
+			int kor = dto.getKor();
+			int eng = dto.getEng();
+			int mat = dto.getMat();
+			
+			int tot = kor+eng+mat;
+			double avg = Math.round(tot/(double)3);
+			
+			dto.setTot(tot);
+			dto.setAvg(avg);
+			
+			result.add(dto);
+			
+			return result;
+			
+		
+		}*/
+	
+	// 데이터 입력 
+	public int add(ScoreDTO dto) throws SQLException  {
+		int result = 0;
+		
+		String sql = "INSERT INTO TBL_SCORE(SID,NAME,KOR,ENG,MAT) VALUES(SCORESEQ.NEXTVAL, ?, ?, ?, ?)";
+		PreparedStatement pstmt = conn.prepareStatement(sql);
+		pstmt.setString(1, dto.getName());
+		pstmt.setInt(2, dto.getKor());
+		pstmt.setInt(3, dto.getEng());
+		pstmt.setInt(4, dto.getMat());
+		
+		result = pstmt.executeUpdate();
+		
+		pstmt.close();
+		
+		return result;
+	}
+	
+	// 데이터 출력
+	public ArrayList<ScoreDTO> list() throws SQLException
+	{
+		ArrayList<ScoreDTO> result = new ArrayList<ScoreDTO>();
+		
+		String sql = "SELECT SID, NAME, KOR, ENG, MAT, (KOR+ENG+MAT) AS TOT, ROUND((KOR+ENG+MAT)/3,1) AS AVG FROM TBL_SCORE ORDER BY SID";
+		PreparedStatement pstmt = conn.prepareStatement(sql);
+		
+		ResultSet rs = pstmt.executeQuery();
+		
+		while(rs.next()) {
+			ScoreDTO dto = new ScoreDTO();
+			
+			dto.setSid(rs.getString("SID"));
+			dto.setName(rs.getString("NAME"));
+			dto.setKor(rs.getInt("KOR"));
+			dto.setEng(rs.getInt("ENG"));
+			dto.setMat(rs.getInt("MAT"));
+			dto.setTot(rs.getInt("TOT"));
+			dto.setAvg(rs.getDouble("AVG"));
+			
+			result.add(dto);
+			
+		}
+		rs.close();
+		pstmt.close();
+		
+		return result;
+	}
+	
+	
+	// 인원수 출력
+	public int count() throws SQLException {
+		int result = 0;
+		
+		String sql ="SELECT COUNT(*) AS COUNT FROM TBL_SCORE";
+		PreparedStatement pstmt = conn.prepareStatement(sql);
+		ResultSet rs = pstmt.executeQuery();
+		
+		if(rs.next())
+			result = rs.getInt("COUNT");
+		
+		rs.close();
+		pstmt.close();
+		
+		return result;
+	}
+	
+	// 데이터 연결 종료
+	public void close() throws SQLException {
+		DBConn.close();
+	}
+}

@@ -34,3 +34,33 @@
 2월 25, 2026 15:32:04.87 [11540:24760:0225/153204.870:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
 2월 25, 2026 15:47:37.93 [11540:18068:0225/154737.934:ERROR:mojo\public\cpp\bindings\lib\interface_endpoint_client.cc:748] Message 5 rejected by interface blink.mojom.WidgetHost
 2월 25, 2026 15:50:57.77 [11540:24760:0225/155057.773:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:483] ConnectionHandler failed with net error: -2
+
+3월 10, 2026 08:51:22.16 NEW SESSION
+3월 10, 2026 08:51:22.16 Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 10, 2026 08:51:24.99 [8732:21376:0310/085124.994:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+3월 10, 2026 08:51:54.45 [8732:21376:0310/085154.455:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+3월 10, 2026 08:52:51.86 [8732:21376:0310/085251.867:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+3월 10, 2026 08:54:30.51 [8732:21376:0310/085430.511:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+3월 10, 2026 08:58:23.08 [8732:21376:0310/085823.083:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+3월 10, 2026 09:04:18.51 [8732:21376:0310/090418.519:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+3월 10, 2026 09:35:41.44 [8732:21376:0310/093541.446:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:483] ConnectionHandler failed with net error: -2
+3월 10, 2026 10:06:39.28 [8732:17432:0310/100639.288:ERROR:mojo\public\cpp\bindings\lib\interface_endpoint_client.cc:748] Message 5 rejected by interface blink.mojom.WidgetHost
+3월 10, 2026 11:18:17.20 [8732:17432:0310/111817.196:ERROR:mojo\public\cpp\bindings\lib\interface_endpoint_client.cc:748] Message 5 rejected by interface blink.mojom.WidgetHost
+3월 10, 2026 11:25:11.60 [8732:17432:0310/112511.603:ERROR:mojo\public\cpp\bindings\lib\interface_endpoint_client.cc:748] Message 5 rejected by interface blink.mojom.WidgetHost
+3월 10, 2026 12:44:06.21 [8732:17432:0310/124406.218:ERROR:mojo\public\cpp\bindings\lib\interface_endpoint_client.cc:748] Message 5 rejected by interface blink.mojom.WidgetHost
+3월 10, 2026 13:02:36.42 [8732:17432:0310/130236.427:ERROR:components\device_event_log\device_event_log_impl.cc:202] [13:02:36.428] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+3월 10, 2026 13:40:28.76 [8732:17432:0310/134028.764:ERROR:components\device_event_log\device_event_log_impl.cc:202] [13:40:28.765] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+3월 10, 2026 16:37:20.58 [8732:21376:0310/163720.584:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:483] ConnectionHandler failed with net error: -2
+3월 10, 2026 16:37:20.71 [8732:17432:0310/163720.710:ERROR:content\browser\network_service_instance_impl.cc:610] Network service crashed or was terminated, restarting service.
+3월 10, 2026 16:37:20.85 [8732:17432:0310/163720.836:ERROR:content\browser\gpu\gpu_process_host.cc:996] GPU process exited unexpectedly: exit_code=1
+3월 10, 2026 16:37:23.34 Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 10, 2026 16:37:25.89 [8136:16100:0310/163725.892:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+3월 10, 2026 16:37:35.72 Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 10, 2026 16:37:38.06 [12664:24408:0310/163738.061:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+3월 10, 2026 16:37:54.65 Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 10, 2026 16:37:57.14 [22196:20040:0310/163757.142:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+3월 10, 2026 16:38:23.12 [22196:20040:0310/163823.121:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+3월 10, 2026 16:39:12.40 [22196:20040:0310/163912.409:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+3월 10, 2026 16:41:00.27 [22196:20040:0310/164100.272:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+3월 10, 2026 16:44:31.12 [22196:20040:0310/164431.125:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+3월 10, 2026 16:51:55.50 [22196:20040:0310/165155.501:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT

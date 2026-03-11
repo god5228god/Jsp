@@ -6,8 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="calander"/>
+		<item key="selection" value="MemeberScoreList"/>
 		<list key="findhistory">
+			<item value="MemeberScoreList"/>
+			<item value="meme"/>
 			<item value=". 『E』 :"/>
 			<item value="calander"/>
 		</list>

@@ -64,3 +64,63 @@
 3월 10, 2026 16:41:00.27 [22196:20040:0310/164100.272:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
 3월 10, 2026 16:44:31.12 [22196:20040:0310/164431.125:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
 3월 10, 2026 16:51:55.50 [22196:20040:0310/165155.501:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+
+3월 12, 2026 10:32:56.62 NEW SESSION
+3월 12, 2026 10:32:56.62 Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 12, 2026 10:32:58.92 [13472:12488:0312/103258.923:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+3월 12, 2026 10:33:21.15 [13472:6644:0312/103321.150:ERROR:CONSOLE:9] "console.assert", source: devtools://devtools/bundled/core/sdk/sdk.js (9)
+3월 12, 2026 10:33:29.08 [13472:12488:0312/103329.088:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+3월 12, 2026 10:34:28.84 [13472:12488:0312/103428.825:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+3월 12, 2026 10:35:57.42 [13472:12488:0312/103557.426:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+3월 12, 2026 10:39:07.66 [13472:12488:0312/103907.669:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+3월 12, 2026 10:46:52.02 [13472:12488:0312/104652.026:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+3월 12, 2026 10:57:56.77 [13472:6644:0312/105756.778:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.331 s for first_image_paint 0.314 s
+3월 12, 2026 10:57:56.91 [13472:6644:0312/105756.914:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.331 s for first_image_paint 0.314 s
+3월 12, 2026 10:57:57.02 [13472:6644:0312/105757.022:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.331 s for first_image_paint 0.314 s
+3월 12, 2026 10:57:57.14 [13472:6644:0312/105757.146:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.331 s for first_image_paint 0.314 s
+3월 12, 2026 10:57:57.25 [13472:6644:0312/105757.257:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.331 s for first_image_paint 0.314 s
+3월 12, 2026 10:57:57.36 [13472:6644:0312/105757.362:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.331 s for first_image_paint 0.314 s
+3월 12, 2026 10:57:57.50 [13472:6644:0312/105757.505:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.331 s for first_image_paint 0.314 s
+3월 12, 2026 10:57:57.99 [13472:6644:0312/105757.990:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.331 s for first_image_paint 0.314 s
+3월 12, 2026 10:57:59.80 [13472:6644:0312/105759.805:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.331 s for first_image_paint 0.314 s
+3월 12, 2026 12:21:27.91 Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 12, 2026 12:21:30.35 [20204:3696:0312/122130.354:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+3월 12, 2026 12:21:55.95 [20204:3696:0312/122155.957:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+3월 12, 2026 12:22:56.08 [20204:3696:0312/122256.089:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+3월 12, 2026 12:24:24.72 [20204:3696:0312/122424.723:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+3월 12, 2026 12:28:00.22 [20204:3696:0312/122800.213:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+3월 12, 2026 12:34:26.01 [20204:3696:0312/123426.015:ERROR:google_apis\gcm\engine\registration_request.cc:290] Registration response error message: DEPRECATED_ENDPOINT
+3월 12, 2026 13:02:19.38 [20204:19964:0312/130219.385:ERROR:components\device_event_log\device_event_log_impl.cc:202] [13:02:19.385] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+3월 12, 2026 13:42:10.95 [20204:19964:0312/134210.959:ERROR:components\device_event_log\device_event_log_impl.cc:202] [13:42:10.959] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+3월 12, 2026 14:53:56.53 [20204:3696:0312/145356.532:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:483] ConnectionHandler failed with net error: -2
+3월 12, 2026 14:54:17.69 [20204:3696:0312/145417.691:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:434] Failed to connect to MCS endpoint with error -118
+3월 12, 2026 14:55:06.14 [20204:3696:0312/145506.140:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:434] Failed to connect to MCS endpoint with error -118
+3월 12, 2026 14:56:23.80 [20204:3696:0312/145623.805:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:434] Failed to connect to MCS endpoint with error -118
+3월 12, 2026 14:58:23.02 [20204:3696:0312/145823.026:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:434] Failed to connect to MCS endpoint with error -118
+3월 12, 2026 15:29:02.28 [20204:19964:0312/152902.283:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint (unset) for first_image_paint 0.344 s
+3월 12, 2026 15:29:02.28 [20204:19964:0312/152902.285:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.359 s for first_image_paint 0.344 s
+3월 12, 2026 15:29:02.42 [20204:19964:0312/152902.426:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.359 s for first_image_paint 0.344 s
+3월 12, 2026 15:29:02.54 [20204:19964:0312/152902.544:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.359 s for first_image_paint 0.344 s
+3월 12, 2026 15:29:02.64 [20204:19964:0312/152902.642:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.359 s for first_image_paint 0.344 s
+3월 12, 2026 15:29:02.75 [20204:19964:0312/152902.752:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.359 s for first_image_paint 0.344 s
+3월 12, 2026 15:29:02.87 [20204:19964:0312/152902.873:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.359 s for first_image_paint 0.344 s
+3월 12, 2026 15:29:03.21 [20204:19964:0312/152903.219:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.359 s for first_image_paint 0.344 s
+3월 12, 2026 15:29:03.42 [20204:19964:0312/152903.421:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.359 s for first_image_paint 0.344 s
+3월 12, 2026 15:29:05.45 [20204:19964:0312/152905.458:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.359 s for first_image_paint 0.344 s
+3월 12, 2026 15:29:06.00 [20204:19964:0312/152906.004:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.359 s for first_image_paint 0.344 s
+3월 12, 2026 15:29:06.54 [20204:19964:0312/152906.539:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.359 s for first_image_paint 0.344 s
+3월 12, 2026 15:29:08.65 [20204:19964:0312/152908.658:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.359 s for first_image_paint 0.344 s
+3월 12, 2026 15:29:08.80 [20204:19964:0312/152908.808:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.359 s for first_image_paint 0.344 s
+3월 12, 2026 15:29:09.25 [20204:19964:0312/152909.254:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.359 s for first_image_paint 0.344 s
+3월 12, 2026 15:29:09.38 [20204:19964:0312/152909.386:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.359 s for first_image_paint 0.344 s
+3월 12, 2026 15:29:09.67 [20204:19964:0312/152909.671:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.359 s for first_image_paint 0.344 s
+3월 12, 2026 15:29:09.90 [20204:19964:0312/152909.899:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.359 s for first_image_paint 0.344 s
+3월 12, 2026 15:29:10.15 [20204:19964:0312/152910.156:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.359 s for first_image_paint 0.344 s
+3월 12, 2026 15:29:10.29 [20204:19964:0312/152910.290:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.359 s for first_image_paint 0.344 s
+3월 12, 2026 15:29:10.54 [20204:19964:0312/152910.541:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.359 s for first_image_paint 0.344 s
+3월 12, 2026 15:29:10.90 [20204:19964:0312/152910.907:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.359 s for first_image_paint 0.344 s
+3월 12, 2026 15:29:11.04 [20204:19964:0312/152911.042:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.359 s for first_image_paint 0.344 s
+3월 12, 2026 15:29:11.15 [20204:19964:0312/152911.155:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.359 s for first_image_paint 0.344 s
+3월 12, 2026 15:29:11.32 [20204:19964:0312/152911.322:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.359 s for first_image_paint 0.344 s
+3월 12, 2026 15:29:11.50 [20204:19964:0312/152911.508:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.359 s for first_image_paint 0.344 s
+3월 12, 2026 15:29:11.59 [20204:19964:0312/152911.595:ERROR:components\page_load_metrics\browser\page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 0.359 s for first_image_paint 0.344 s

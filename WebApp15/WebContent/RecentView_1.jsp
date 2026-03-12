@@ -131,6 +131,8 @@
 	response.addCookie(cAuthor);
 	response.addCookie(cPublisher);
 	
+	
+
 
 	
 %>

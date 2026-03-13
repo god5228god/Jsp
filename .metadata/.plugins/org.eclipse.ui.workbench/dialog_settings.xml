@@ -38,4 +38,18 @@
 		<item key="internalFilter" value="false"/>
 		<item key="uncategorizedFilter" value="false"/>
 	</section>
+	<section name="org.eclipse.ui.internal.dialogs.WorkbenchEditorsDialog">
+		<item key="allPersp" value="false"/>
+		<item key="sort" value="0"/>
+		<list key="bounds">
+			<item value="246"/>
+			<item value="155"/>
+			<item value="798"/>
+			<item value="553"/>
+		</list>
+		<list key="columns">
+			<item value="252"/>
+			<item value="504"/>
+		</list>
+	</section>
 </section>

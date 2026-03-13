@@ -12,11 +12,17 @@
     <fullyQualifiedTypeName name="java.lang.StackOverflowError"/>
     <fullyQualifiedTypeName name="java.lang.StrictMath"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="com.util.DBConn"/>
     <fullyQualifiedTypeName name="com.test.MemberDTO"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.test.MemberScoreDTO"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.lang.Package"/>
+    <fullyQualifiedTypeName name="java.beans.Statement"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.sun.xml.internal.bind.v2.schemagen.xmlschema.List"/>
+    <fullyQualifiedTypeName name="com.test.BoardDTO"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 </qualifiedTypeNameHistroy>

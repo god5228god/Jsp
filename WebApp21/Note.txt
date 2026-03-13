@@ -1,0 +1,21 @@
+■■■■ JDBC 연동 게시판 작성 실습 ■■■
+
+
+○ 프로젝트: WebApp21
+
+○ 물리적 파일 구성
+	- sql\01_WebApp21_scott.sql
+	
+	- com.util.DBConn
+	- com.test.BoardDTO
+	- com.test.BoardDAO
+	- com.util.MyUtil(페이징 처리 전담)
+	
+	- List.jsp (게시판 목록)
+	- Created.jsp (글쓰기 버튼 누르면 나오는 페이지 - 입력폼의 형태 작성완료버튼)
+	- Created_ok.jsp (작성완료시 db처리할 페이지)
+	- Article.jsp(게시물 상세 내용 보여지는 페이지)
+	- Updated.jsp(게시물 수정 폼 페이지)
+	- Updated_ok.jsp(수정 후 db액션처리 페이지)
+	- Delete_ok.jsp(삭제 후 db액션처리 페이지)
+	

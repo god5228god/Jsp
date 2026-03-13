@@ -9,7 +9,7 @@
 <title>Guest.jsp</title>
 <link rel="stylesheet" type="text/css" href="css/main.css" />
 <style type="text/css">
-body{background-color: #eee;}
+body{background-color: #f0f2f5;}
 .formWrap
 {
 	width: 300px; height: 200px; 
@@ -27,14 +27,14 @@ textarea
 	width: 223px; height: 50px;
 	border: none;
 	padding: 5px 2px; box-sizing:border-box;
-	background-color: #eee;
+	background-color: #faf0b6;
 }
 .inTxt
 {
 	width: 150px; height: 25px;
 	padding-left: 5px; box-sizing: border-box;
 	border: none; border-radius: 10px;
-	background-color: #eee;
+	background-color: #faf0b6;
 }
 .inTxt:focus 
 {
